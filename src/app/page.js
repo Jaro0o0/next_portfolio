@@ -2,6 +2,7 @@ import Header from "./components/Header/Header";
 import TechStack from "./components/TechStack/TechStack";
 import Portfolio from './components/Portfolio/Portfolio'
 import Image from "next/image";
+import Contact from "./components/Contact/Contact";
 
 
 
@@ -24,6 +25,7 @@ function Home() {
       </section>
       <TechStack/>
       <Portfolio/>
+      <Contact/>
      
     
     </>

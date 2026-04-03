@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
   return (
-    <header className="fixed top-0 w-full p-5">
+    <header className="fixed top-0 w-full p-5 bg-black">
       <div className="container mx-auto max-w-5xl">
         <div className="flex justify-between items-center">
           <div className="flex gap-4 items-center">

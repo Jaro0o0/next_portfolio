@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Portfolio() {
   return (
-    <section>
+    <section className="py-[95px] px-0">
       <div className="container mx-auto max-w-5xl">
         <h1 className="text-3xl text-white">My work</h1>
         {/* Grid */}
@@ -93,7 +93,7 @@ function Portfolio() {
             <div>
               <h1 className="text-2xl text-white">E commerce</h1>
               {/* TECH_STACK_BOX*/}
-              <div className="flex gap-2">
+              <div className="flex gap-2 flex-wrap">
                 {/* ICON */}
                 <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
                   React
@@ -109,6 +109,14 @@ function Portfolio() {
                 {/* ICON */}
                 <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
                   Tailwind CSS
+                </div>
+                {/* ICON */}
+                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                  Django
+                </div>
+                   {/* ICON */}
+                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                  Django Rest Framework
                 </div>
               </div>
             </div>
