@@ -4,6 +4,7 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Image from "next/image";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
+import Footer from "./components/Footer/Footer";
 
 
 
@@ -28,6 +29,7 @@ function Home() {
       <Portfolio/>
       <Contact/>
       <About/>
+      <Footer/>
      
     
     </>
