@@ -3,6 +3,7 @@ import TechStack from "./components/TechStack/TechStack";
 import Portfolio from './components/Portfolio/Portfolio'
 import Image from "next/image";
 import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
 
 
 
@@ -26,6 +27,7 @@ function Home() {
       <TechStack/>
       <Portfolio/>
       <Contact/>
+      <About/>
      
     
     </>

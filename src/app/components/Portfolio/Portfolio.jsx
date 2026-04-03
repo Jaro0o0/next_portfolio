@@ -3,7 +3,7 @@ import Image from "next/image";
 function Portfolio() {
   return (
     <section className="py-[95px] px-0">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-7xl">
         <h1 className="text-3xl text-white">My work</h1>
         {/* Grid */}
         <div className="grid grid-cols-2 gap-5 mt-5">

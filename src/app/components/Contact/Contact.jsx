@@ -4,7 +4,7 @@ import { faGithub, faLinkedin , faReact , faPython , faTailwindCss , faGitAlt} f
 function Contact () {
     return ( 
         <section className="py-[95px] px-0">
-            <div className="container  mx-auto max-w-5xl">
+            <div className="container  mx-auto max-w-7xl">
                 {/* HEADING */}
                 <div className="mb-5">
                     <h1 className="text-white text-3xl">Contact</h1>
