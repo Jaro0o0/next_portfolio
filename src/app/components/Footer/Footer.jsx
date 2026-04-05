@@ -1,11 +1,17 @@
+import ShootingStar from "../ShootingStars/ShootingStars";
+
 function Footer() {
     return ( 
         <>
-            <section className="py-[120px] px-0">
-                <div className="container  mx-auto max-w-7xl  border border-[#171717] rounded-md p-4">
-                    <h1 className="text-white text-3xl">Lets build something together</h1>
-                    <span>Send email for cooperation</span>
-                    <button>Send</button>
+            <section className="py-[120px] pb-[20px] px-0 ">
+                <div className="container  mx-auto max-w-7xl  border border-[#171717] rounded-md p-8 relative">
+                    <ShootingStar/>
+                    {/* TEXT_BOX */}
+                    <div className="mb-5">
+                        <h1 className="text-white text-5xl">Lets build something together</h1>
+                        <span>Send email for cooperation</span>
+                        <button>Send</button>
+                    </div>
                     {/* COL_TWO */}
                     <div className=" border-t border-[#171717]  flex justify-between  p-4">
                         <h1 className="text-white">Maciej Lach</h1>
