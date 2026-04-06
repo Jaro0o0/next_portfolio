@@ -4,7 +4,7 @@ function Footer() {
     return ( 
         <>
             <section className="py-[120px] pb-[20px] px-0 ">
-                <div className="container  mx-auto max-w-7xl  border border-[#171717] rounded-md p-8 relative">
+                <div className="container  mx-auto max-w-7xl  border border-[#171717] rounded-md p-8 relative overflow-hidden">
                     <ShootingStar/>
                     {/* TEXT_BOX */}
                     <div className="mb-5">

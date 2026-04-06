@@ -7,7 +7,7 @@ function Contact () {
             <div className="container  mx-auto max-w-7xl">
                 {/* HEADING */}
                 <div className="mb-5">
-                    <h1 className="text-white text-3xl">Contact</h1>
+                    <h1 className="text-white text-5xl">Contact</h1>
                     <p className="text-white">Get in touch</p>
                 </div>
                 {/* Grid */}

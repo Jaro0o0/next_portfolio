@@ -9,7 +9,7 @@ function TechStack() {
     <section className="py-[95px] px-0">
         {/* Tech Stack */}
         <div className="container mx-auto max-w-7xl">
-          <h1 className="text-2xl ">Tech stack</h1>
+          <h1 className="text-5xl ">Tech stack</h1>
           <p className="mb-2">Technology i use in project</p>
           {/* GRID */}
           <div className="grid grid-cols-4 gap-2">
