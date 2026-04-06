@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin , faReact , faPython , faTailwindCss , faGitAlt} from "@fortawesome/free-brands-svg-icons";
 
+import { faCode, faBook , faLocationCrosshairs,faArrowRight} from "@fortawesome/free-solid-svg-icons";
+
 function Contact () {
     return ( 
         <section className="py-[95px] px-0">
@@ -25,6 +27,19 @@ function Contact () {
                             <p>jar0dev80@gmail.com</p>
                         </div>
                     </div>
+                    {/* SERVICES */}
+                    <div>
+                        <h1 className=" text-3xl text-white mb-5">Services</h1>
+                        {/* ICONS_BOX */}
+                        <div>
+                        <ul>
+                            <li className="flex gap-3"><FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" /> Full Stack Development</li>
+                            <li className="flex gap-3"><FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" /> Frontend Development</li>
+                            <li className="flex gap-3"><FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />Backed Development</li>
+                            <li className="flex gap-3"><FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />API Integration</li>
+                        </ul>
+                        </div>
+                     </div>
                     
                 </div>
                 {/* Form_BOX */}

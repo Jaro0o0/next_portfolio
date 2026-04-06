@@ -9,7 +9,15 @@ function Portfolio() {
   return (
     <section className="py-[95px] px-0">
       <div className="container mx-auto max-w-7xl">
-        <h1 className="text-5xl text-white">My work</h1>
+        {/* TEXT_BOX */}
+        <div className="flex justify-between"> 
+          <h1 className="text-5xl text-white">My work</h1>
+          {/* BBUTTON */}
+          <div className="bg-white py-3 px-6 rounded-md flex gap-2 w-30">
+              <Link href='#' >Work</Link>
+              <FontAwesomeIcon icon={faArrowRightLong} className="w-6 h-6" />
+          </div>
+        </div>
         {/* Grid */}
         <div className="grid grid-cols-2 gap-5 mt-5">
           {/* CARD_ONE */}
@@ -61,8 +69,8 @@ function Portfolio() {
               <Image
                 src="/portfolio-imgs/portfolio-card-img-one.jpg"
                 alt="Medical Website Project"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 className="rounded-md"
               />
             </div>
@@ -70,23 +78,30 @@ function Portfolio() {
             <div>
               <h1 className="text-2xl text-white">Medical Website</h1>
               {/* TECH_STACK_BOX*/}
-              <div className="flex gap-2">
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  React
+              <div className="flex justify-between">
+                {/* ICONS_BOX */}
+                <div className="flex gap-2">
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    React
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Framer Motion
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Material UI
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    React Router
+                  </div>
                 </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Framer Motion
-                </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Material UI
-                </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  React Router
-                </div>
+                {/* BTN */}
+                <Link href='/SocialMedia' className="bg-[#1771BF] w-15 h-15 rounded-md flex items-center justify-center">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="w-10 h-10" />
+                </Link>
               </div>
             </div>
           </div>
@@ -98,8 +113,8 @@ function Portfolio() {
               <Image
                 src="/portfolio-imgs/portfolio-card-img-one.jpg"
                 alt="E-commerce Project"
-                width={500}
-                height={500}
+                width={600}
+                height={600}
                 className="rounded-md"
               />
             </div>
@@ -107,31 +122,39 @@ function Portfolio() {
             <div>
               <h1 className="text-2xl text-white">E commerce</h1>
               {/* TECH_STACK_BOX*/}
-              <div className="flex gap-2 flex-wrap">
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  React
+              <div className="flex justify-between">
+                {/* ICONS_BOX */}
+                <div className="flex gap-2">
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    React
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Framer Motion
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Material UI
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Tailwind CSS
+                  </div>
+                  {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Django
+                  </div>
+                    {/* ICON */}
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
+                    Django Rest Framework
+                  </div>
                 </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Framer Motion
-                </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Material UI
-                </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Tailwind CSS
-                </div>
-                {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Django
-                </div>
-                   {/* ICON */}
-                <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                  Django Rest Framework
-                </div>
+                 {/* BTN */}
+                <Link href='/SocialMedia' className="bg-[#1771BF] w-15 h-15 rounded-md flex items-center justify-center">
+                  <FontAwesomeIcon icon={faArrowRightLong} className="w-10 h-10" />
+                </Link>
+                
               </div>
             </div>
           </div>

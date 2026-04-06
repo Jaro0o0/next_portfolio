@@ -1,7 +1,9 @@
 import Image from "next/image";
 
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faCode,faGlobe} from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
 
 function SocialMedia() {
     return ( 
@@ -49,6 +51,20 @@ function SocialMedia() {
                                         PostgreSQL
                                     </div>
                                 </div>
+                                {/* BUTTONS_BOX */}
+                                <div className="flex mt-5 gap-2">
+                                    {/* BBUTTON */}
+                                    <div className="bg-white py-3 px-6 rounded-md flex gap-2 w-30">
+                                        <Link href='#' >Code </Link>
+                                        <FontAwesomeIcon icon={faCode} className="h-6 w-6" />
+                                    </div>
+                                    {/* BBUTTON */}
+                                    <div className="bg-white py-3 px-6 rounded-md flex gap-2 w-30">
+                                        <Link href='#' >Demo</Link>
+                                        <FontAwesomeIcon icon={faGlobe} className="h-6 w-6"  />
+                                    </div>
+                                </div>
+                              
                             </div>
 
                             {/* DESCRIPTION */}
