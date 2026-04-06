@@ -1,10 +1,10 @@
-import Header from "./components/Header/Header";
+
 import TechStack from "./components/TechStack/TechStack";
 import Portfolio from './components/Portfolio/Portfolio'
 import Image from "next/image";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
-import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       {/* HEADER */}
-      <Header/>
+     
       {/* SECTION_HERO */}
       <section className="h-screen w-full relative bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]">
         {/* HERO_HEADER */}
@@ -29,7 +29,7 @@ function Home() {
       <Portfolio/>
       <Contact/>
       <About/>
-      <Footer/>
+      
      
     
     </>

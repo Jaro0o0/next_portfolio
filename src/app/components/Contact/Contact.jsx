@@ -25,6 +25,7 @@ function Contact () {
                             <p>jar0dev80@gmail.com</p>
                         </div>
                     </div>
+                    
                 </div>
                 {/* Form_BOX */}
                 <div>
