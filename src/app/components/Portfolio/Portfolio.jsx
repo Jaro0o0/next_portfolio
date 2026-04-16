@@ -1,163 +1,100 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
+const projects = [
+  {
+    title: "Social Media",
+    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    tags: ["Django", "ThreeJS", "PostgreSQL"],
+    link: "/SocialMedia",
+  },
+  {
+    title: "Medical Website",
+    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    tags: ["React", "Framer Motion", "Material UI", "React Router"],
+    link: "/SocialMedia",
+  },
+  {
+    title: "E-commerce",
+    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    tags: ["React", "Framer Motion", "Tailwind CSS", "Django", "DRF"],
+    link: "/SocialMedia",
+  },
+];
 
 function Portfolio() {
   return (
-    <section className="py-[95px] px-0">
+    <section className="py-24 px-4 sm:px-6">
       <div className="container mx-auto max-w-7xl">
-        {/* TEXT_BOX */}
-        <div className="flex justify-between"> 
-          <h1 className="text-5xl text-white">My work</h1>
-          {/* BBUTTON */}
-          <div className="bg-white py-3 px-6 rounded-md flex gap-2 w-30">
-              <Link href='#' >Work</Link>
-              <FontAwesomeIcon icon={faArrowRightLong} className="w-6 h-6" />
+        {/* HEADER */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12">
+          <div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">My work</h2>
+            <p className="text-zinc-400 max-w-md">Explore my latest projects where I combine design and engineering.</p>
           </div>
+          
+          <Link 
+            href="#" 
+            className="group bg-white text-black py-3 px-8 rounded-full flex items-center gap-3 font-medium hover:bg-zinc-200 transition-all"
+          >
+            All Work
+            <FontAwesomeIcon icon={faArrowRightLong} className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
-        {/* Grid */}
-        <div className="grid grid-cols-2 gap-5 mt-5">
-          {/* CARD_ONE */}
-          <div className="bg-[#171717] p-4 flex flex-col gap-5 rounded-md">
-            {/* IMG_BOX */}
-            <div className="flex justify-center">
-              <Image
-                src="/portfolio-imgs/portfolio-card-img-one.jpg"
-                alt="Social Media Project"
-                width={600}
-                height={600}
-                className="rounded-md"
-              />
-            </div>
-            {/* TEXT_BOX */}
-            <div>
-              <h1 className="text-2xl text-white">Social Media</h1>
-              {/* TECH_STACK_BOX*/}
-              <div className="flex justify-between">
-                {/* ICONS_BOX */}
-                <div className="flex gap-2">
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Django
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    ThreeJS
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    PostgreSQL
-                  </div>
-                </div>
 
-                {/* BTN */}
-                <Link href='/SocialMedia' className="bg-[#1771BF] w-15 h-15 rounded-md flex items-center justify-center">
-                  <FontAwesomeIcon icon={faArrowRightLong} className="w-10 h-10" />
-                </Link>
+        {/* GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {projects.map((project, index) => (
+            <div 
+              key={index} 
+              className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10 transition-all duration-300"
+            >
+              {/* IMAGE_BOX */}
+              <div className="aspect-[16/10] overflow-hidden relative">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              {/* CONTENT_BOX */}
+              <div className="p-6">
+                <div className="flex justify-between items-end gap-4">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-white mb-4">{project.title}</h3>
+                    
+                    {/* TAGS */}
+                    <div className="flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <span 
+                          key={tag} 
+                          className="px-3 py-1 bg-white/5 text-zinc-300 text-xs font-medium rounded-full border border-white/5"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* ACTION_BTN */}
+                  <Link 
+                    href={project.link} 
+                    className="w-14 h-14 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn"
+                    aria-label={`View ${project.title} project`}
+                  >
+                    <FontAwesomeIcon 
+                      icon={faArrowRightLong} 
+                      className="w-6 h-6 -rotate-45 group-hover/btn:rotate-0 transition-transform" 
+                    />
+                  </Link>
+                </div>
               </div>
             </div>
-        
-          </div>
-
-          {/* CARD_TWO */}
-          <div className="bg-[#171717] p-4 flex flex-col gap-5">
-            {/* IMG_BOX */}
-            <div className="flex justify-center">
-              <Image
-                src="/portfolio-imgs/portfolio-card-img-one.jpg"
-                alt="Medical Website Project"
-                width={600}
-                height={600}
-                className="rounded-md"
-              />
-            </div>
-            {/* TEXT_BOX */}
-            <div>
-              <h1 className="text-2xl text-white">Medical Website</h1>
-              {/* TECH_STACK_BOX*/}
-              <div className="flex justify-between">
-                {/* ICONS_BOX */}
-                <div className="flex gap-2">
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    React
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Framer Motion
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Material UI
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    React Router
-                  </div>
-                </div>
-                {/* BTN */}
-                <Link href='/SocialMedia' className="bg-[#1771BF] w-15 h-15 rounded-md flex items-center justify-center">
-                  <FontAwesomeIcon icon={faArrowRightLong} className="w-10 h-10" />
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* CARD_THREE */}
-          <div className="bg-[#171717] p-4 flex flex-col gap-5">
-            {/* IMG_BOX */}
-            <div className="flex justify-center">
-              <Image
-                src="/portfolio-imgs/portfolio-card-img-one.jpg"
-                alt="E-commerce Project"
-                width={600}
-                height={600}
-                className="rounded-md"
-              />
-            </div>
-            {/* TEXT_BOX */}
-            <div>
-              <h1 className="text-2xl text-white">E commerce</h1>
-              {/* TECH_STACK_BOX*/}
-              <div className="flex justify-between">
-                {/* ICONS_BOX */}
-                <div className="flex gap-2">
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    React
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Framer Motion
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Material UI
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Tailwind CSS
-                  </div>
-                  {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Django
-                  </div>
-                    {/* ICON */}
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md ">
-                    Django Rest Framework
-                  </div>
-                </div>
-                 {/* BTN */}
-                <Link href='/SocialMedia' className="bg-[#1771BF] w-15 h-15 rounded-md flex items-center justify-center">
-                  <FontAwesomeIcon icon={faArrowRightLong} className="w-10 h-10" />
-                </Link>
-                
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
