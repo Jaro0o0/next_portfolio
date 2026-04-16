@@ -5,9 +5,10 @@ import Image from "next/image";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
 
+
 //IMPORT BUTTON
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faCode,faGlobe} from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faCode,faGlobe,faDownload} from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 
 
@@ -35,8 +36,9 @@ function Home() {
                   <FontAwesomeIcon icon={faGlobe} className="h-6 w-6"  />
               </div>
                {/* BBUTTON */}
-              <div className=" py-3 px-6 rounded-md  text-[#1771BF]">
-                  <Link href='#' >Download CV</Link>
+              <div className=" flex gap-2 py-3 px-6 rounded-md  text-[#1771BF]">
+                  <Link href='#' >Download CV </Link>
+                  <FontAwesomeIcon icon={faDownload} className="h-6 w-6" />
                   
               </div>
           </div>

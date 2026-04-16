@@ -15,7 +15,7 @@ function TechStack() {
             <p className="mb-2">Technology i use in project</p>
           </div>
           {/* GRID */}
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-5 gap-2">
 
 
             {/* CARD_ONE */}
@@ -99,7 +99,7 @@ function TechStack() {
               {/* <FontAwesomeIcon icon={faReact} /> */}
               {/* ICON_BOX */}
               <div className="rounded-md bg-blue-700  flex items-center  p-3">
-                <Image src='/icons/postgres.svg' width={24} height={24} alt="Postgres Logo" />
+                <Image src='/icons/postgres.png' width={24} height={24} alt="Postgres Logo" />
 
               </div>
               {/* TEXT_BOX */}
@@ -129,7 +129,7 @@ function TechStack() {
               {/* <FontAwesomeIcon icon={faReact} /> */}
               {/* ICON_BOX */}
               <div className="rounded-md bg-blue-700  flex items-center  p-3">
-                <Image src='/icons/material.png' width={24} height={24} alt="Postgres Logo" />
+                <Image src='/icons/material.svg' width={24} height={24} alt="Postgres Logo" />
 
               </div>
               {/* TEXT_BOX */}
@@ -138,6 +138,39 @@ function TechStack() {
                 <p className="text-white text-sm">React libraryk</p>
               </div>
             </div>
+
+
+
+            {/* CARD_C */}
+            <div className="p-4 flex gap-2 bg-[#171717] rounded-md">
+              {/* <FontAwesomeIcon icon={faReact} /> */}
+              {/* ICON_BOX */}
+              <div className="rounded-md bg-indigo-500  flex items-center  p-3">
+                <Image src='/icons/C.png' width={26} height={26} alt="C Logo" />
+
+              </div>
+              {/* TEXT_BOX */}
+              <div>
+                <span className="text-white text-lg">C</span>
+                <p className="text-white text-sm">Programming language</p>
+              </div>
+            </div>    
+
+
+            {/* CARD_Framer */}
+            <div className="p-4 flex gap-2 bg-[#171717] rounded-md">
+              {/* <FontAwesomeIcon icon={faReact} /> */}
+              {/* ICON_BOX */}
+              <div className="rounded-md bg-indigo-400  flex items-center  p-3">
+                <Image src='/icons/framer-motion.svg' width={24} height={24} alt="Framer Logo" />
+
+              </div>
+              {/* TEXT_BOX */}
+              <div>
+                <span className="text-white text-lg">Framer Motion</span>
+                <p className="text-white text-sm">React animations library</p>
+              </div>
+            </div> 
 
 
 
