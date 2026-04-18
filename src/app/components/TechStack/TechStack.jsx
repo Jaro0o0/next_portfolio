@@ -6,16 +6,16 @@ import { faReact, faPython, faTailwindCss, faGitAlt } from "@fortawesome/free-br
 import { motion } from "framer-motion";
 
 const techItems = [
-  { name: "React", description: "JavaScript Library", icon: faReact, color: "text-cyan-400", bgColor: "bg-cyan-500/10" },
-  { name: "Python", description: "Programming language", icon: faPython, color: "text-yellow-500", bgColor: "bg-blue-500/10" },
-  { name: "Tailwind", description: "CSS framework", icon: faTailwindCss, color: "text-sky-400", bgColor: "bg-sky-500/10" },
-  { name: "Git", description: "Version control", icon: faGitAlt, color: "text-[#F05032]", bgColor: "bg-orange-600/10" },
-  { name: "Django", description: "Web framework", src: "/icons/django.svg", bgColor: "bg-emerald-900/20" },
-  { name: "Postgres", description: "Database", src: "/icons/postgres.png", bgColor: "bg-blue-500/10" },
-  { name: "NextJS", description: "React framework", src: "/icons/next.svg", bgColor: "bg-white/10", className: "invert brightness-200" },
-  { name: "MaterialUI", description: "React library", src: "/icons/material.svg", bgColor: "bg-blue-600/10" },
-  { name: "C", description: "Programming language", src: "/icons/C.png", bgColor: "bg-indigo-500/10" },
-  { name: "Framer Motion", description: "Animations library", src: "/icons/framer-motion.svg", bgColor: "bg-purple-500/10" },
+  { name: "React", description: "JavaScript Library", icon: faReact, color: "text-cyan-400", bgColor: "bg-cyan-500/10", borderColor: "hover:border-cyan-400/50" },
+  { name: "Python", description: "Programming language", icon: faPython, color: "text-yellow-500", bgColor: "bg-blue-500/10", borderColor: "hover:border-yellow-500/50" },
+  { name: "Tailwind", description: "CSS framework", icon: faTailwindCss, color: "text-sky-400", bgColor: "bg-sky-500/10", borderColor: "hover:border-sky-400/50" },
+  { name: "Git", description: "Version control", icon: faGitAlt, color: "text-[#F05032]", bgColor: "bg-orange-600/10", borderColor: "hover:border-[#F05032]/50" },
+  { name: "Django", description: "Web framework", src: "/icons/django.svg", bgColor: "bg-emerald-900/20", borderColor: "hover:border-emerald-500/50" },
+  { name: "Postgres", description: "Database", src: "/icons/postgres.png", bgColor: "bg-blue-500/10", borderColor: "hover:border-blue-400/50" },
+  { name: "NextJS", description: "React framework", src: "/icons/next.svg", bgColor: "bg-white/10", borderColor: "hover:border-white/50", className: "invert brightness-200" },
+  { name: "MaterialUI", description: "React library", src: "/icons/material.svg", bgColor: "bg-blue-600/10", borderColor: "hover:border-blue-600/50" },
+  { name: "C", description: "Programming language", src: "/icons/C.png", bgColor: "bg-indigo-500/10", borderColor: "hover:border-indigo-500/50" },
+  { name: "Framer Motion", description: "Animations library", src: "/icons/framer-motion.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50" },
 ];
 
 function TechStack() {
@@ -60,7 +60,7 @@ function TechStack() {
                 hidden: { opacity: 0, y: 20 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
               }}
-              className="p-4 flex gap-3 bg-[#171717] rounded-xl border border-white/5 hover:border-white/10 transition-all group cursor-default"
+              className={`p-4 flex gap-3 bg-[#171717] rounded-xl border border-white/5 ${item.borderColor} transition-all duration-300 group cursor-default`}
             >
               {/* ICON_BOX */}
               <div className={`rounded-lg ${item.bgColor} flex items-center justify-center p-3 group-hover:scale-110 transition-transform duration-300`}>

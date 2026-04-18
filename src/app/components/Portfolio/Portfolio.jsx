@@ -22,14 +22,14 @@ const projects = [
   {
     title: "Crypto Forge",
     image: "/portfolio-imgs/portfolio-card-img-one.jpg",
-    tags: ["NextJS", "Framer Motion", "Tailwind CSS", ],
-    link: "/SocialMedia",
+    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI", ],
+    link: "/CryptoForge",
   },
   {
     title: "Portfolio",
     image: "/portfolio-imgs/portfolio-card-img-one.jpg",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    link: "/",
+    link: "/Portfolio",
   },
 ];
 

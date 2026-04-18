@@ -6,7 +6,7 @@ import { faArrowDown, faCode, faGlobe, faArrowLeft } from "@fortawesome/free-sol
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-function MedicalWebsite() {
+function CryptoForge() {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -60,7 +60,7 @@ function MedicalWebsite() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Medical Website</h1>
+          <h1 className="text-white text-8xl font-bold tracking-tighter">Crypto forge</h1>
           <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Social media app build in Django</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
@@ -97,16 +97,13 @@ function MedicalWebsite() {
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    React
+                    Django
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Material UI
+                    ThreeJS
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Framer Motion
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    React Router
+                    PostgreSQL
                   </div>
                 </div>
                 {/* BUTTONS_BOX */}
@@ -125,7 +122,7 @@ function MedicalWebsite() {
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
                 <p>
-                  This project is a modern website for a physiotherapy clinic built using React for the frontend, Material UI for a clean and consistent user interface, and Framer Motion to deliver smooth animations and interactive transitions. The application was developed as a commercial project with a focus on usability, accessibility, and a professional medical aesthetic.
+                 This project is a modern cryptocurrency price tracking platform called CryptoForge, built using Next.js for optimized performance, server-side rendering, and fast page loads. It leverages Material UI to create a clean, consistent, and responsive interface, ensuring a professional and intuitive user experience across all devices.
                 </p>
               </motion.div>
             </div>
@@ -136,4 +133,4 @@ function MedicalWebsite() {
   );
 }
 
-export default MedicalWebsite;
+export default CryptoForge;
