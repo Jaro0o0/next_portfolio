@@ -12,8 +12,8 @@ function TechStack() {
           {/* TEXT_BOX */}
           <div className="mb-5">
             <h1 className="text-5xl text-white mb-2 ">Tech stack</h1>
-            <p>I use modern technologies and best practices to build efficient and maintainable solutions.</p>
-            <p> My tech stack is chosen to match project needs while ensuring performance and great user experience.</p>
+            <p className="text-zinc-400 ">I use modern technologies and best practices to build efficient and maintainable solutions.</p>
+            <p className="text-zinc-400 "> My tech stack is chosen to match project needs while ensuring performance and great user experience.</p>
           </div>
           {/* GRID */}
           <div className="grid grid-cols-5 gap-4">
