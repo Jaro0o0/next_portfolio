@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "framer-motion";
 
 const projects = [
   {
@@ -14,27 +17,39 @@ const projects = [
     title: "Medical Website",
     image: "/portfolio-imgs/portfolio-card-img-one.jpg",
     tags: ["React", "Framer Motion", "Material UI", "React Router"],
+    link: "/MedicalWebsite",
+  },
+  {
+    title: "Crypto Forge",
+    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    tags: ["NextJS", "Framer Motion", "Tailwind CSS", ],
     link: "/SocialMedia",
   },
   {
-    title: "E-commerce",
+    title: "Portfolio",
     image: "/portfolio-imgs/portfolio-card-img-one.jpg",
-    tags: ["React", "Framer Motion", "Tailwind CSS", "Django", "DRF"],
-    link: "/SocialMedia",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    link: "/",
   },
 ];
 
 function Portfolio() {
   return (
-    <section className="py-24 px-4 sm:px-6">
+    <section className="py-24 px-4 sm:px-6 overflow-hidden">
       <div className="container mx-auto max-w-7xl">
         {/* HEADER */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12"
+        >
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">My work</h2>
             <p className="text-zinc-400 max-w-md">Explore my latest projects where I combine design and engineering.</p>
           </div>
-          
+
           <Link 
             href="#" 
             className="group bg-white text-black py-3 px-8 rounded-full flex items-center gap-3 font-medium hover:bg-zinc-200 transition-all"
@@ -42,13 +57,31 @@ function Portfolio() {
             All Work
             <FontAwesomeIcon icon={faArrowRightLong} className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
+        </motion.div>
 
         {/* GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <motion.div 
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: { opacity: 0 },
+            show: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.2
+              }
+            }
+          }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+        >
           {projects.map((project, index) => (
-            <div 
+            <motion.div 
               key={index} 
+              variants={{
+                hidden: { opacity: 0, y: 30 },
+                show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+              }}
               className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10 transition-all duration-300"
             >
               {/* IMAGE_BOX */}
@@ -66,7 +99,7 @@ function Portfolio() {
                 <div className="flex justify-between items-end gap-4">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-4">{project.title}</h3>
-                    
+
                     {/* TAGS */}
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
@@ -93,9 +126,9 @@ function Portfolio() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ function SocialMedia() {
 
         {/* TEXT_BOX     */}
         <div className="flex flex-col  items-center absolute rounded-md top-[25%] left-1/2 -translate-x-1/2  -translate-y-1/2 pointer-events-none">
-          <h1 className="text-white text-8xl font-bold">Social Media</h1>
+          <h1 className="text-white text-8xl font-bold">Medical website</h1>
           <p className="text-white text-xl mt-4 mb-5 text-center ">Social media app build in Django</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />

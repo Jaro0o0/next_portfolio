@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGlobe, faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
   return (
@@ -18,8 +18,8 @@ const Hero = () => {
             href="#portfolio" 
             className="bg-white text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-200 transition-colors font-semibold"
           >
-            Work
-            <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
+            See Work
+            <FontAwesomeIcon icon={faEye} className="h-5 w-5" />
           </Link>
           
           {/* CV BUTTON */}
