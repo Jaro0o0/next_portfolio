@@ -1,28 +1,69 @@
 "use client";
 
-
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function ShootingStars() {
-    return (  
-        <>
-        <div className="overflow-hidden z-0">
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity,  }} className="absolute top-[80px] left-[100px] rotate-[200deg] inline-block  after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity,  }} className="absolute rotate-[200deg] inline-block  rounded-[50%]   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
+  const [stars, setStars] = useState([]);
+
+  useEffect(() => {
+    // Generowanie konfiguracji gwiazd po stronie klienta
+    const starConfigs = [...Array(10)].map((_, i) => ({
+      id: i,
+      top: Math.random() * 50,
+      left: Math.random() * 50,
+      delay: Math.random() * 15,
+      duration: 4.0 + Math.random() * 4.0,
+      scale: 0.4 + Math.random() * 0.6,
+    }));
+    setStars(starConfigs);
+  }, []);
+
+  if (stars.length === 0) return null;
+
+  return (
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
+      {stars.map((star) => (
+        <motion.div
+          key={star.id}
+          initial={{ x: 0, y: 0, opacity: 0 }}
+          animate={{ 
+            x: 1200, 
+            y: 800, 
+            opacity: [0, 0.4, 0.4, 0] 
+          }}
+          transition={{
+            duration: star.duration,
+            repeat: Infinity,
+            delay: star.delay,
+            ease: "linear",
+            times: [0, 0.1, 0.9, 1]
+          }}
+          style={{
+            position: "absolute",
+            top: `${star.top}%`,
+            left: `${star.left}%`,
+            scale: star.scale,
+          }}
+        >
+          <div className="relative">
+            {/* Star Head */}
+            <div className="w-1 h-1 bg-white rounded-full shadow-[0_0_10px_2px_rgba(255,255,255,0.9)]" />
             
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity,  }} className="absolute top-[40px] left-[100px] rotate-[200deg] inline-block w-3 h-3 rounded-[50%]   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity,  }} className="absolute   top-[-40px] left-[100px] rotate-[200deg] inline-block   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity,  }} className="absolute top-[20px] left-[100px] rotate-[200deg] inline-block   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity, delay:2  }} className="absolute   top-[-20px] left-[100px] rotate-[200deg] inline-block   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity, delay:1 }} className="absolute top-[35px] left-[-60px] rotate-[200deg] inline-block   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-            <motion.span   initial={{ rotate: 0, opacity:1 }} animate={{ x:-850, opacity:0 }} transition={{ duration: 3,repeat: Infinity, delay: 0.5 }} className="absolute   top-[70px] left-[-100px] rotate-[200deg] inline-block   after:content-[''] after:absolute after:top-[50%] after:-translate-y-1/2 after:left-[50%] after:w-20 after:h-[2px] after:bg-[#171717]"></motion.span>
-        </div>
-        
-        </>
-        
-    );
+            {/* Star Tail */}
+            <div 
+              className="absolute top-1/2 left-0 -translate-y-1/2 w-48 h-[1.5px]"
+              style={{
+                background: "linear-gradient(to right, white, transparent)", 
+                transform: "rotate(213.7deg)",
+                transformOrigin: "left center",
+              }}
+            />
+          </div>
+        </motion.div>
+      ))}
+    </div>
+  );
 }
 
 export default ShootingStars;
