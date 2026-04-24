@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 function ShootingStars() {
   const [stars, setStars] = useState([]);
 
+
   useEffect(() => {
     // Generowanie konfiguracji gwiazd po stronie klienta
     const starConfigs = [...Array(10)].map((_, i) => ({
@@ -16,6 +17,8 @@ function ShootingStars() {
       duration: 4.0 + Math.random() * 4.0,
       scale: 0.4 + Math.random() * 0.6,
     }));
+
+    //zeby komponet sie odsiwezyl z danymi
     setStars(starConfigs);
   }, []);
 
