@@ -1,9 +1,32 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
+  const [open , setOpen] = useState(false)
+  
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [open]);
+
   return (
+    <>
     <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl z-50">
       <nav className="bg-[#121212]/70 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex justify-between items-center shadow-2xl">
         {/* LOGO */}
@@ -13,11 +36,13 @@ const Header = () => {
 
         {/* NAVIGATION */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+          {isHomePage && (
+            <li>
+              <Link href="#work" className="hover:text-white transition-colors">Work</Link>
+            </li>
+          )}
           <li>
-            <Link href="#work" className="hover:text-white transition-colors">Work</Link>
-          </li>
-          <li>
-            <Link href="#about" className="hover:text-white transition-colors">Home</Link>
+            <Link href={isHomePage ? "#home" : "/"} className="hover:text-white transition-colors">Home</Link>
           </li>
           <li>
             <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
@@ -28,7 +53,7 @@ const Header = () => {
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-4 border-r border-white/10 pr-5">
             <a 
-              href="www.linkedin.com/in/maciej-lach-46555b404/" 
+              href="https://linkedin.com" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -36,7 +61,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
             </a>
             <a 
-              href="https://github.com/Jaro0o0" 
+              href="https://www.linkedin.com/in/maciej-lach-46555b404/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -46,14 +71,58 @@ const Header = () => {
           </div>
           
           <Link 
-            href="#contact" 
+            href="mailto:jar0dev80@gmail.com" 
             className="hidden sm:block text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-[#1771BF] hover:text-white transition-all"
           >
             Hire Me
           </Link>
+          <button onClick={() => setOpen(!open)} className="md:hidden text-white w-6 h-6 flex items-center justify-center">
+            <FontAwesomeIcon icon={open ? faXmark : faBars} className="text-xl" />
+          </button>
         </div>
       </nav>
     </header>
+
+    {/* SIDE_Menu */}
+    <AnimatePresence>
+      {open && (
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          className="fixed inset-0 w-full h-screen bg-[#121212]/95 backdrop-blur-xl z-[40] flex flex-col items-center justify-center"
+        >
+          <ul className="flex flex-col items-center gap-10 text-3xl font-bold tracking-tight text-gray-400">
+            {isHomePage && (
+              <motion.li 
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+              >
+                <Link href="#work" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Work</Link>
+              </motion.li>
+            )}
+            <motion.li 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Link href={isHomePage ? "#home" : "/"} onClick={() => setOpen(false)} className="hover:text-white transition-colors">Home</Link>
+            </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <Link href="#contact" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Contact</Link>
+            </motion.li>
+          </ul>
+        </motion.div>
+      )}
+    </AnimatePresence>
+   
+    </>
   );
 };
 

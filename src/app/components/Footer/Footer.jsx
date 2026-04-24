@@ -19,7 +19,7 @@ function Footer() {
                             Have a project in mind? Let's talk!
                         </p>
                         <Link 
-                            href="mailto:your-email@example.com"
+                            href="mailto:jar0dev80@gmail.com"
                             className="inline-block bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-zinc-200 transition-all hover:scale-105"
                         >
                             Send an email
@@ -61,12 +61,8 @@ function Footer() {
                 </div>
 
                 {/* COPYRIGHT */}
-                <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-600 text-sm">
-                    <p>&copy; {currentYear} Maciej Lach. All rights reserved.</p>
-                    <div className="flex gap-6">
-                        <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-                        <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-                    </div>
+                <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-4 text-zinc-600 text-sm">
+                    <p className="text-center">&copy; {currentYear} Maciej Lach. All rights reserved.</p>
                 </div>
             </div>
         </footer>
