@@ -28,7 +28,7 @@ const Header = () => {
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-4 border-r border-white/10 pr-5">
             <a 
-              href="https://linkedin.com" 
+              href="www.linkedin.com/in/maciej-lach-46555b404/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"

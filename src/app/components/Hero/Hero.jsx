@@ -27,7 +27,8 @@ export const itemVariants = {
 
 const Hero = () => {
   return (
-    <section className="h-screen w-full relative bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] flex items-center justify-center">
+    <section id="home" className="h-screen w-full relative bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] flex items-center justify-center">
+     
       {/* HERO_HEADER */}
       <motion.div 
         variants={containerVariants}
@@ -51,7 +52,7 @@ const Hero = () => {
         <motion.div variants={itemVariants} className="flex gap-4 justify-center mt-4">
           {/* WORK BUTTON */}
           <Link 
-            href="#portfolio" 
+            href="#work" 
             className="bg-gray-300 text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors font-semibold shadow-lg shadow-white/5"
           >
             See Work

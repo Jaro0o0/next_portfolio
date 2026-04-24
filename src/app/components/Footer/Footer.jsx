@@ -5,7 +5,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
 
     return ( 
-        <footer className="pt-24 pb-12 px-4 sm:px-6">
+        <footer className="pt-24 pb-12 px-4 sm:px-6" id='contact'>
             <div className="container mx-auto max-w-7xl">
                 {/* CTA_SECTION */}
                 <div className="relative overflow-hidden bg-[#111111] border border-white/5 rounded-3xl p-8 md:p-16 mb-16 text-center">

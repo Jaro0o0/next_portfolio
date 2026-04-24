@@ -35,7 +35,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section className="py-24 px-4 sm:px-6 overflow-hidden">
+    <section className="py-24 px-4 sm:px-6 overflow-hidden" id='work'>
       <div className="container mx-auto max-w-7xl">
         {/* HEADER */}
         <motion.div 
