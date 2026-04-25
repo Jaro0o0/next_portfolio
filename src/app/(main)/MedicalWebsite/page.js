@@ -82,7 +82,7 @@ function MedicalWebsite() {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/portfolio-card-img-one.jpg"
+                src="/portfolio-imgs/FallMedicalLaptop.png"
                 alt="Social Media Project"
                 width={1000}
                 height={1000}

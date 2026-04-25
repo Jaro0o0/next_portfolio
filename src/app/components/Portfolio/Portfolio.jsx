@@ -8,27 +8,21 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Social Media",
-    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
-    tags: ["Django", "ThreeJS", "PostgreSQL"],
-    link: "/SocialMedia",
-  },
-  {
     title: "Medical Website",
-    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    image: "/portfolio-imgs/MedicalLaptop.png",
     tags: ["React", "Framer Motion", "Material UI", "React Router"],
     link: "/MedicalWebsite",
   },
   {
     title: "Crypto Forge",
-    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
+    image: "/portfolio-imgs/CryptoLaptop.png",
     tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI", ],
     link: "/CryptoForge",
   },
   {
-    title: "Portfolio",
-    image: "/portfolio-imgs/portfolio-card-img-one.jpg",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    title: "Feynman Bot",
+    image: "/portfolio-imgs/BotLaptop.png",
+    tags: ["Node.js", "Discord.js", "JavaScript","Gemini AI"],
     link: "/Portfolio",
   },
 ];

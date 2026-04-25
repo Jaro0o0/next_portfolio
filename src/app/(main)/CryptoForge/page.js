@@ -47,7 +47,7 @@ function CryptoForge() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Crypto forge</h1>
+          <h1 className="text-white text-8xl font-bold tracking-tighter">Crypto Forge</h1>
           <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Social media app build in Django</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
@@ -69,7 +69,7 @@ function CryptoForge() {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/portfolio-card-img-one.jpg"
+                src="/portfolio-imgs/FallCryptoLaptop.png"
                 alt="Social Media Project"
                 width={1000}
                 height={1000}
@@ -84,13 +84,16 @@ function CryptoForge() {
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Django
+                    NextJS
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
                     ThreeJS
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    PostgreSQL
+                    TailwindCSS
+                  </div>
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    MaterialUI
                   </div>
                 </div>
                 {/* BUTTONS_BOX */}
