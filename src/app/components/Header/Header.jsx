@@ -30,7 +30,7 @@ const Header = () => {
     <header className="fixed top-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl z-50">
       <nav className="bg-[#121212]/70 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 flex justify-between items-center shadow-2xl">
         {/* LOGO */}
-        <Link href="/" className="text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
+        <Link href="/" className=" text-white text-xl font-bold tracking-tighter hover:opacity-80 transition-opacity">
           ML<span className="text-[#1771BF]">.</span>
         </Link>
 
@@ -53,7 +53,7 @@ const Header = () => {
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-4 border-r border-white/10 pr-5">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/maciej-lach-46555b404/"  
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
@@ -61,7 +61,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
             </a>
             <a 
-              href="https://www.linkedin.com/in/maciej-lach-46555b404/" 
+              href="https://github.com/Jaro0o0" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"

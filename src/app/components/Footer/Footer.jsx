@@ -42,8 +42,7 @@ function Footer() {
                         <h4 className="text-white font-medium mb-4">Navigate</h4>
                         <ul className="space-y-3 text-zinc-500">
                             <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#portfolio" className="hover:text-white transition-colors">Projects</Link></li>
-                            <li><Link href="#about" className="hover:text-white transition-colors">About</Link></li>
+                            <li><Link href="#work" className="hover:text-white transition-colors">Projects</Link></li>
                             <li><Link href="#contact" className="hover:text-white transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -52,10 +51,8 @@ function Footer() {
                     <div>
                         <h4 className="text-white font-medium mb-4">Social</h4>
                         <ul className="space-y-3 text-zinc-500">
-                            <li><a href="#" className="hover:text-white transition-colors">GitHub</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">LinkedIn</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Twitter</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
+                            <li><a href="https://github.com/Jaro0o0" className="hover:text-white transition-colors">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/maciej-lach-46555b404/" className="hover:text-white transition-colors">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
