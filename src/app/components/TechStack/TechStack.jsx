@@ -72,11 +72,18 @@ function TechStack() {
 
               <div className="flex items-start justify-between">
                 {/* ICON_BOX */}
-                <div className={`rounded-xl ${item.bgColor} flex items-center justify-center p-3 group-hover:scale-110 transition-transform duration-500 ease-out shadow-inner`}>
+                <div className={`w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center group-hover:scale-110 transition-transform duration-500 ease-out shadow-inner flex-shrink-0`}>
                   {item.icon ? (
-                    <FontAwesomeIcon icon={item.icon} className={`w-7 h-7 ${item.color}`} />
+                    <FontAwesomeIcon icon={item.icon} className={`w-8 h-8 ${item.color}`} />
                   ) : (
-                    <Image src={item.src} width={28} height={28} alt={`${item.name} Logo`} className={`${item.className || ""} object-contain`} />
+                    <div className="relative w-6 h-6">
+                      <Image 
+                        src={item.src} 
+                        fill 
+                        alt={`${item.name} Logo`} 
+                        className={`${item.className || ""} object-contain`} 
+                      />
+                    </div>
                   )}
                 </div>
               </div>

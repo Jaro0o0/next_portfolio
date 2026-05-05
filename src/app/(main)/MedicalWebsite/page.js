@@ -105,11 +105,11 @@ function MedicalWebsite() {
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
                   {/* BBUTTON */}
-                  <Link href="#" className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
+                  <Link href="MedicalCommingSoon" className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
                     Code <FontAwesomeIcon icon={faCode} className="h-5 w-5" />
                   </Link>
                   {/* BBUTTON */}
-                  <Link href="#" className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
+                  <Link href="MedicalCommingSoon" className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
                     Demo <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
                   </Link>
                 </div>
