@@ -48,7 +48,7 @@ function MedicalWebsite() {
           className="flex flex-col items-center relative z-10 text-center"
         >
           <h1 className="text-white text-8xl font-bold tracking-tighter">Medical Website</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Social media app build in Django</p>
+          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Physiotherapy clinic website built with React & Material UI</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
           </div>
@@ -95,6 +95,12 @@ function MedicalWebsite() {
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
                     React Router
                   </div>
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    React Hook Form
+                  </div>
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    EmailJS
+                  </div>
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
@@ -112,7 +118,7 @@ function MedicalWebsite() {
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
                 <p>
-                  This project is a modern website for a physiotherapy clinic built using React for the frontend, Material UI for a clean and consistent user interface, and Framer Motion to deliver smooth animations and interactive transitions. The application was developed as a commercial project with a focus on usability, accessibility, and a professional medical aesthetic.
+                  This project is a modern website for a physiotherapy clinic built using React for the frontend, Material UI for a clean and consistent user interface, and Framer Motion to deliver smooth animations and interactive transitions. The application was developed as a commercial project with a focus on usability, accessibility, and a professional  aesthetic.
                 </p>
               </motion.div>
             </div>

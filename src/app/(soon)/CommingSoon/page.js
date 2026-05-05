@@ -4,7 +4,7 @@ import Countdown from "@/app/components/ComingSoon/Countdown";
 export default function CommingSoon() {
     // Definujemy datę docelową po stronie serwera
     // 30 dni od dzisiaj (piątek, 24 kwietnia 2026) -> 24 maja 2026
-    const targetDate = new Date("2026-05-24T00:00:00").getTime();
+    const targetDate = new Date("2026-06-24T00:00:00").getTime();
 
     return (
         <>

@@ -2,12 +2,11 @@
 
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faCode, faGlobe, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import BackButton from "@/app/components/BackButton/BackButton";
 
-function CryptoForge() {
+function Portfolio() {
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -26,7 +25,21 @@ function CryptoForge() {
   return (
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
-      <BackButton />
+      <motion.div 
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+        className="fixed top-28 left-10 z-[60]"
+      >
+        <Link 
+          href="/#portfolio" 
+          className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"
+        >
+          <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#1771BF] transition-all text-sm">
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </div>
+          <span className="text-xs font-bold uppercase tracking-widest">Back to work</span>
+        </Link>
+      </motion.div>
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}
@@ -47,8 +60,8 @@ function CryptoForge() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Crypto Forge</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Cryptocurrency exchange and price tracking platform built with Next.js,</p>
+          <h1 className="text-white text-8xl font-bold tracking-tighter">Fitness Website</h1>
+          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Simple gym website built in Vite with custom router</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
           </div>
@@ -69,7 +82,7 @@ function CryptoForge() {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/FallCryptoLaptop.png"
+                src="/portfolio-imgs/FallFitnessLaptop.png"
                 alt="Social Media Project"
                 width={1000}
                 height={1000}
@@ -84,35 +97,35 @@ function CryptoForge() {
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    NextJS
+                    Vite
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    ThreeJS
+                    JavaScript
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    TailwindCSS
+                    Tailwind
                   </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    MaterialUI
+                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    Swiper.js
                   </div>
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
                   {/* BBUTTON */}
-                  <a href="https://github.com/Jaro0o0/CryptoForge" className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
+                  <Link href="https://github.com/Jaro0o0/FitnessWebsite" className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
                     Code <FontAwesomeIcon icon={faCode} className="h-5 w-5" />
-                  </a>
+                  </Link>
                   {/* BBUTTON */}
-                  <a href="https://crypto-forge-omega.vercel.app" className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
+                  <Link href="https://fitness-gym-five-weld.vercel.app/" className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
                     Demo <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
 
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
                 <p>
-                 This project is a modern cryptocurrency exchange and price tracking platform called CryptoForge, built using Next.js for optimized performance, server-side rendering, and fast page loads. It leverages Material UI and Tailwind CSS to create a clean, consistent, and responsive interface, ensuring a professional and intuitive user experience across all devices.
+                  This project is a modern gym website built with Vite, JavaScript, and Tailwind CSS, designed to showcase fitness offerings through a clean and dynamic interface. It leverages Swiper.js to deliver smooth, interactive carousels and seamless content navigation  ensuring a fast, visually engaging, and fully responsive experience across all devices.
                 </p>
               </motion.div>
             </div>
@@ -123,4 +136,4 @@ function CryptoForge() {
   );
 }
 
-export default CryptoForge;
+export default Portfolio;

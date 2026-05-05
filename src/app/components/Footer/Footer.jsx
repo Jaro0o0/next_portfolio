@@ -33,7 +33,7 @@ function Footer() {
                     <div className="md:col-span-2">
                         <h3 className="text-2xl font-bold text-white mb-4 tracking-tighter">Maciej Lach</h3>
                         <p className="text-zinc-500 max-w-xs leading-relaxed">
-                            Full-stack developer focused on creating clean, efficient, and user-centric digital experiences.
+                           Front-end focused software engineer who turns ideas into fast, polished, and user friendly web applications.
                         </p>
                     </div>
 
@@ -41,9 +41,8 @@ function Footer() {
                     <div>
                         <h4 className="text-white font-medium mb-4">Navigate</h4>
                         <ul className="space-y-3 text-zinc-500">
-                            <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
-                            <li><Link href="#work" className="hover:text-white transition-colors">Projects</Link></li>
-                            <li><Link href="#contact" className="hover:text-white transition-colors">Contact</Link></li>
+                            <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#work" className="hover:text-white transition-colors">Projects</a></li>
                         </ul>
                     </div>
 
@@ -51,8 +50,8 @@ function Footer() {
                     <div>
                         <h4 className="text-white font-medium mb-4">Social</h4>
                         <ul className="space-y-3 text-zinc-500">
-                            <li><a href="https://github.com/Jaro0o0" className="hover:text-white transition-colors">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/maciej-lach-46555b404/" className="hover:text-white transition-colors">LinkedIn</a></li>
+                            <li><a href="https://github.com/Jaro0o0" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/maciej-lach-46555b404/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>

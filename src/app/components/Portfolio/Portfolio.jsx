@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Medical Website",
     image: "/portfolio-imgs/MedicalLaptop.png",
-    tags: ["React", "Framer Motion", "Material UI", "React Router"],
+    tags: ["React", "Framer Motion", "Material UI", "React Router",'React Hook Form','EmailJS'],
     link: "/MedicalWebsite",
   },
   {
@@ -24,6 +24,12 @@ const projects = [
     image: "/portfolio-imgs/BotLaptop.png",
     tags: ["Node.js", "Discord.js", "JavaScript","Gemini AI"],
     link: "/Portfolio",
+  },
+    {
+    title: "Fitness Website",
+    image: "/portfolio-imgs/FitnessLaptop.png",
+    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
+    link: "/FitnessWebsite",
   },
 ];
 
@@ -40,7 +46,7 @@ function Portfolio() {
           className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 mb-12"
         >
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-2">My work</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">My work</h2>
             <p className="text-zinc-400 max-w-md">Explore my latest projects where I combine design and engineering.</p>
           </div>
 

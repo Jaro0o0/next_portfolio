@@ -60,8 +60,8 @@ function Portfolio() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Portfolio</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Social media app build in Django</p>
+          <h1 className="text-white text-8xl font-bold tracking-tighter">Feynman Bot</h1>
+          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">AI-powered Discord learning bot built with Node.js & Gemini API</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
           </div>
@@ -97,13 +97,16 @@ function Portfolio() {
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Django
+                    Node.js
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    ThreeJS
+                    Discord.js
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    PostgreSQL
+                    JavaScript
+                  </div>
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    Gemini AI
                   </div>
                 </div>
                 {/* BUTTONS_BOX */}
@@ -122,7 +125,7 @@ function Portfolio() {
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
                 <p>
-                  This project is a modern developer portfolio website built using Next.js, designed for high performance, SEO optimization, and fast navigation. It serves as a personal showcase of projects, skills, and experience in a clean and professional format
+                 This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.
                 </p>
               </motion.div>
             </div>

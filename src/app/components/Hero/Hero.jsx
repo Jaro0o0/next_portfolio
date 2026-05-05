@@ -27,10 +27,10 @@ export const itemVariants = {
 
 const Hero = () => {
   return (
-    <section id="home" className="h-screen w-full relative bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] flex items-center justify-center overflow-hidden">
+    <section id="home" className="min-h-screen w-full relative bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] flex items-center justify-center overflow-hidden">
       {/* LIGHT EFFECT */}
       <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={false}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#1771BF]/10 blur-[120px] rounded-full pointer-events-none" 
@@ -52,7 +52,7 @@ const Hero = () => {
         </motion.h1>
         
         <motion.span variants={itemVariants} className="text-xl text-gray-400">
-          Building digital products, brands, and experiences.
+         Full-stack engineer with a sharp eye for the frontend.
         </motion.span>
         
         {/* BUTTONS_BOX */}

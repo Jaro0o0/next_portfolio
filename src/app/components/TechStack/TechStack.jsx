@@ -39,8 +39,7 @@ function TechStack() {
             Tech stack
           </h2>
           <p className="text-zinc-400 max-w-2xl leading-relaxed text-lg font-medium">
-            I use modern technologies and best practices to build efficient and maintainable solutions. 
-            Selected to ensure performance and exceptional user experience.
+            The technologies I reach for in my projects.
           </p>
         </motion.div>
 
