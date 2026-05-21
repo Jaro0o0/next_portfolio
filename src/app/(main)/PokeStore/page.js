@@ -47,8 +47,8 @@ function MedicalWebsite() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Medical Website</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Physiotherapy clinic website built with React & Material UI</p>
+          <h1 className="text-white text-8xl font-bold tracking-tighter">Pokestore</h1>
+          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic "> Full Stack e-commerce project built with Ract & django</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
           </div>
@@ -69,7 +69,7 @@ function MedicalWebsite() {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/FallMedicalLaptop.png"
+                src="/portfolio-imgs/FallPokemonLaptop.png"
                 alt="Social Media Project"
                 width={1000}
                 height={1000}

@@ -14,10 +14,22 @@ const projects = [
     link: "/MedicalWebsite",
   },
   {
+    title: "Fitness Website",
+    image: "/portfolio-imgs/FitnessLaptop.png",
+    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind CSS'],
+    link: "/FitnessWebsite",
+  },
+  {
     title: "Crypto Forge",
     image: "/portfolio-imgs/CryptoLaptop.png",
-    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI", ],
+    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI",'ThreeJS' ],
     link: "/CryptoForge",
+  },
+    {
+    title: "PokéStore ",
+    image: "/portfolio-imgs/PokemonLaptop.png",
+    tags: ["React", "React Redux", 'React Router','React Hook Form' ,"Django",'Django Rest Framework', ],
+    link: "/PokeStore", 
   },
   {
     title: "Feynman Bot",
@@ -25,12 +37,8 @@ const projects = [
     tags: ["Node.js", "Discord.js", "JavaScript","Gemini AI"],
     link: "/Portfolio",
   },
-    {
-    title: "Fitness Website",
-    image: "/portfolio-imgs/FitnessLaptop.png",
-    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
-    link: "/FitnessWebsite",
-  },
+ 
+
 ];
 
 function Portfolio() {

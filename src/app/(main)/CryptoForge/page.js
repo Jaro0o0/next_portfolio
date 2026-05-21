@@ -87,13 +87,16 @@ function CryptoForge() {
                     NextJS
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    ThreeJS
+                  Framer Motion
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
                     TailwindCSS
                   </div>
                   <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
                     MaterialUI
+                  </div>
+                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                       ThreeJS
                   </div>
                 </div>
                 {/* BUTTONS_BOX */}
