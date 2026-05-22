@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-const BackButton = () => {
+const BackButton = ({ className = "" }) => {
   return (
     <motion.div 
       initial={false}
       animate={{ opacity: 1, x: 0 }}
-      className="fixed top-28 left-10 z-[60]"
+      className={`fixed top-28 left-10 z-[60] ${className}`}
     >
       <Link 
         href="/#work" 

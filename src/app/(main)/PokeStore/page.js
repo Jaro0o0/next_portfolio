@@ -8,6 +8,9 @@ import { motion } from "framer-motion";
 import BackButton from "@/app/components/BackButton/BackButton";
 
 function MedicalWebsite() {
+
+  const technologies = ["React", "React Redux", 'React Router','React Hook Form' ,"Django",'Django Rest Framework', ]
+
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -26,7 +29,7 @@ function MedicalWebsite() {
   return (
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
-     <BackButton/>
+     <BackButton className='hidden md:block'/>
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}
@@ -47,8 +50,8 @@ function MedicalWebsite() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-8xl font-bold tracking-tighter">Pokestore</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic "> Full Stack e-commerce project built with Ract & django</p>
+          <h1 className="text-white text-6xl md:text-8xl font-bold tracking-tighter">Pokestore</h1>
+          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Full-stack e-commerce platform for buying Pokémon cards</p>
           <div className="animate-bounce">
             <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
           </div>
@@ -69,7 +72,7 @@ function MedicalWebsite() {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/FallPokemonLaptop.png"
+                src="/portfolio-imgs/FallPokemonLaptopp.png"
                 alt="Social Media Project"
                 width={1000}
                 height={1000}
@@ -83,24 +86,16 @@ function MedicalWebsite() {
                 <h1 className="text-white text-5xl font-bold mb-6">Project Overview</h1>
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    React
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Material UI
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    Framer Motion
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    React Router
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    React Hook Form
-                  </div>
-                  <div className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                    EmailJS
-                  </div>
+                  {technologies.map((item,index) =>{
+                    return(
+                    <div key={index} className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                      {item}
+                    </div>
+                    )
+              
+                  })}
+
+                
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
@@ -118,7 +113,7 @@ function MedicalWebsite() {
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
                 <p>
-                  This project is a modern website for a physiotherapy clinic built using React for the frontend, Material UI for a clean and consistent user interface, and Framer Motion to deliver smooth animations and interactive transitions. The application was developed as a commercial project with a focus on usability, accessibility, and a professional  aesthetic.
+                   This project  is Full-stack e-commerce platform for buying Pokémon cards. Django REST Framework backend delivers a REST API handling user authentication, product management, and order processing. React frontend with Redux for global state management of the shopping cart .
                 </p>
               </motion.div>
             </div>

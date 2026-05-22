@@ -47,7 +47,7 @@ const Hero = () => {
           BASED IN POLAND
         </motion.span>
         
-        <motion.h1 variants={itemVariants} className="text-8xl font-bold tracking-tighter text-gray-300">
+        <motion.h1 variants={itemVariants} className=" text-7xl md:text-8xl font-bold tracking-tighter text-gray-300">
           Software Engineer
         </motion.h1>
         
