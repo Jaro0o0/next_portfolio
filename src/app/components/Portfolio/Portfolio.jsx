@@ -58,7 +58,7 @@ function Portfolio() {
           </div>
 
           <Link 
-            href="/CommingSoon" 
+            href="/CommingSoon/all-work" 
             className="group bg-white text-black py-3 px-8 rounded-full flex items-center gap-3 font-medium hover:bg-zinc-200 transition-all"
           >
             All Work

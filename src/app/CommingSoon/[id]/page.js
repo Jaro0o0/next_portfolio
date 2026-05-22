@@ -1,10 +1,22 @@
 import BackButton from "@/app/components/BackButton/BackButton";
 import Countdown from "@/app/components/ComingSoon/Countdown";
+import { timers } from "../data";
+import Link from "next/link";
 
-export default function CommingSoon() {
-    // Definujemy datę docelową po stronie serwera
-    // 30 dni od dzisiaj (piątek, 24 kwietnia 2026) -> 24 maja 2026
-    const targetDate = new Date("2026-06-24T00:00:00").getTime();
+export default  async function CommingSoon( { params }) {
+    const { id }  = await params
+    const timer = timers.find((item) => item.slug === id)
+
+    if (!timer) {
+        return (
+            <div className="bg-[#050505] min-h-screen text-white flex flex-col items-center justify-center gap-4">
+                <h1 className="text-4xl font-bold">Timer not found</h1>
+                <Link href="/#work" className="text-sky-500 hover:underline">Go back to projects</Link>
+            </div>
+        );
+    }
+
+    const targetDate = new Date(timer.time).getTime();
 
     return (
         <>
