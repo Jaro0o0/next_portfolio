@@ -7,9 +7,15 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import BackButton from "@/app/components/BackButton/BackButton";
 
+import { items } from "../data";
 
+async function PortfolioPage({parmas}) {
 
-function MedicalWebsite() {
+    const { id } = await parmas
+    //data
+    const {} = items
+
+    
 
   const technologies = ["React", "React Redux", 'React Router','React Hook Form' ,"Django",'Django Rest Framework', ]
 
