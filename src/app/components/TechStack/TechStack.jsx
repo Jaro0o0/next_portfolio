@@ -18,6 +18,9 @@ const techItems = [
   { name: "MaterialUI", description: "UI Library", src: "/icons/material.svg", bgColor: "bg-blue-600/10", borderColor: "hover:border-blue-600/50", shadowColor: "group-hover:shadow-blue-600/10" },
   { name: "React Redux", description: "Library", src: "/icons/redux.png", bgColor: "bg-indigo-500/10", borderColor: "hover:border-indigo-500/50", shadowColor: "group-hover:shadow-indigo-500/10" },
   { name: "Framer Motion", description: "Animations", src: "/icons/framer-motion.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
+  { name: "Cursor Ai", description: "AI tool", src: "/icons/cursor.png", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
+  { name: "Gemini CLI", description: "AI tool", src: "/icons/geminicli-color.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
+  
 ];
 
 function TechStack() {
@@ -55,7 +58,7 @@ function TechStack() {
               transition: { staggerChildren: 0.05 }
             }
           }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4"
         >
           {techItems.map((item, index) => (
             <motion.div 

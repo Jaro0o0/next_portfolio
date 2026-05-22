@@ -2,22 +2,25 @@
 
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowDown, faCode, faGlobe, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useParams } from "next/navigation";
+import { items } from "../data";
 import BackButton from "@/app/components/BackButton/BackButton";
 
-import { items } from "../data";
+function ProjectPage() {
+  const { id } = useParams();
+  const project = items.find((item) => item.slug === id);
 
-async function PortfolioPage({parmas}) {
-
-    const { id } = await parmas
-    //data
-    const {} = items
-
-    
-
-  const technologies = ["React", "React Redux", 'React Router','React Hook Form' ,"Django",'Django Rest Framework', ]
+  if (!project) {
+    return (
+      <div className="bg-[#050505] min-h-screen text-white flex flex-col items-center justify-center gap-4">
+        <h1 className="text-4xl font-bold">Project not found</h1>
+        <Link href="/#work" className="text-sky-500 hover:underline">Go back to projects</Link>
+      </div>
+    );
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -37,7 +40,7 @@ async function PortfolioPage({parmas}) {
   return (
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
-     <BackButton className='hidden md:block'/>
+      <BackButton className="hidden md:block" />
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}
@@ -58,10 +61,10 @@ async function PortfolioPage({parmas}) {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center relative z-10 text-center"
         >
-          <h1 className="text-white text-6xl md:text-8xl font-bold tracking-tighter">Pokestore</h1>
-          <p className="text-gray-400  text-xl mt-4 mb-5 text-center italic ">Full-stack e-commerce platform for buying Pokémon cards</p>
+          <h1 className="text-white text-5xl md:text-8xl font-bold tracking-tighter">{project.title}</h1>
+          <p className="text-gray-400 text-lg md:text-xl mt-4 mb-5 text-center italic ">{project.subtitle}</p>
           <div className="animate-bounce">
-            <FontAwesomeIcon icon={faArrowDown} className="w-15 h-15 text-white" />
+            <FontAwesomeIcon icon={faArrowDown} className="w-10 h-10 md:w-15 md:h-15 text-white" />
           </div>
         </motion.div>
       </section>
@@ -80,8 +83,8 @@ async function PortfolioPage({parmas}) {
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
               <Image
-                src="/portfolio-imgs/FallPokemonLaptopp.png"
-                alt="Social Media Project"
+                src={project.img}
+                alt={project.title}
                 width={1000}
                 height={1000}
                 className="relative rounded-md shadow-2xl border border-white/5 w-full object-cover"
@@ -94,35 +97,28 @@ async function PortfolioPage({parmas}) {
                 <h1 className="text-white text-5xl font-bold mb-6">Project Overview</h1>
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
-                  {technologies.map((item,index) =>{
-                    return(
-                    <div key={index} className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
-                      {item}
+                  {project.tech.map((tag) => (
+                    <div key={tag} className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                      {tag}
                     </div>
-                    )
-              
-                  })}
-
-                
+                  ))}
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
                   {/* BBUTTON */}
-                  <a href="https://github.com/Jaro0o0/Gabinet" className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
+                  <Link href={project.code} className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
                     Code <FontAwesomeIcon icon={faCode} className="h-5 w-5" />
-                  </a>
+                  </Link>
                   {/* BBUTTON */}
-                  <a href="https://www.kormedic.pl/" className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
+                  <Link href={project.demo} className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
                     Demo <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
 
               {/* DESCRIPTION */}
               <motion.div variants={itemVariants} className="flex items-end text-gray-300 text-lg leading-relaxed">
-                <p>
-                   This project  is Full-stack e-commerce platform for buying Pokémon cards. Django REST Framework backend delivers a REST API handling user authentication, product management, and order processing. React frontend with Redux for global state management of the shopping cart .
-                </p>
+                <p>{project.desc}</p>
               </motion.div>
             </div>
           </motion.div>
@@ -132,4 +128,4 @@ async function PortfolioPage({parmas}) {
   );
 }
 
-export default MedicalWebsite;
+export default ProjectPage;

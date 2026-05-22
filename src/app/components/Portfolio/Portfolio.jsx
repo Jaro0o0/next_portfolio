@@ -11,33 +11,32 @@ const projects = [
     title: "Medical Website",
     image: "/portfolio-imgs/MedicalLaptop.png",
     tags: ["React", "Framer Motion", "Material UI", "React Router",'React Hook Form','EmailJS'],
-    link: "/MedicalWebsite",
+    link:  "/PortfolioPages/medical-website", 
   },
   {
     title: "Fitness Website",
     image: "/portfolio-imgs/FitnessLaptop.png",
-    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind CSS'],
-    link: "/FitnessWebsite",
+    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
+    link: "/PortfolioPages/fitness-website",
   },
   {
     title: "Crypto Forge",
     image: "/portfolio-imgs/CryptoLaptop.png",
-    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI",'ThreeJS' ],
-    link: "/CryptoForge",
+    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI", ],
+    link: "/PortfolioPages/crypto-forge",
   },
-    {
-    title: "PokéStore ",
+  {
+    title: "PokéStore",
     image: "/portfolio-imgs/PokemonLaptop.png",
-    tags: ["React", "React Redux", 'React Router','React Hook Form' ,"Django",'Django Rest Framework', ],
-    link: "/PokeStore", 
+    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
+    link: "/PortfolioPages/pokestore",
   },
   {
     title: "Feynman Bot",
     image: "/portfolio-imgs/BotLaptop.png",
     tags: ["Node.js", "Discord.js", "JavaScript","Gemini AI"],
-    link: "/Portfolio",
+    link: "/PortfolioPages/feynman-bot",
   },
- 
 
 ];
 
