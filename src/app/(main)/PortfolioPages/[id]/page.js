@@ -86,7 +86,7 @@ function ProjectPage() {
                 alt={project.title}
                 width={1000}
                 height={1000}
-                className="relative rounded-md shadow-2xl border border-white/5 w-full object-cover"
+                className="relative rounded-md shadow-2xl border border-white/5 h-[300px] md:h-auto w-full object-cover object-[-0.5%_center] md:object-center"
               />
             </motion.div>
 
@@ -94,21 +94,21 @@ function ProjectPage() {
             {/* TEXT_COL */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <motion.div variants={itemVariants}>
-                <h1 className="text-white text-5xl md:text-6xl font-bold mb-6">Project Overview</h1>
+                <h1 className="text-white text-4xl md:text-5xl font-bold mb-6">Project Overview</h1>
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tag) => (
-                    <div key={tag} className="bg-[#1b1b1b] p-3 text-white rounded-md border border-white/5">
+                    <div key={tag} className="bg-[#1b1b1b]  p-2.5 md:p-3 text-white rounded-md border border-white/5">
                       {tag}
                     </div>
                   ))}
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
-                  <Link href={project.code} className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
+                  <Link href={project.code} className="bg-white text-black py-3 px-6  md:py-4 md:px-8 rounded-xl flex items-center  gap-1 md:gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
                     Code <FontAwesomeIcon icon={faCode} className="h-5 w-5" />
                   </Link>
-                  <Link href={project.demo} className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
+                  <Link href={project.demo} className="border border-white/10 text-white  py-3 px-6  md:py-4 md:px-8 rounded-xl flex items-center  gap-1 md:gap-3 font-bold hover:bg-white/5 transition-all">
                     Demo <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
                   </Link>
                 </div>

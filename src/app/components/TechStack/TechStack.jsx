@@ -18,7 +18,7 @@ const techItems = [
   { name: "Material UI", description: "UI Library", src: "/icons/material.svg", bgColor: "bg-blue-600/10", borderColor: "hover:border-blue-600/50", shadowColor: "group-hover:shadow-blue-600/10" },
   { name: "React Redux", description: "Library", src: "/icons/redux.png", bgColor: "bg-indigo-500/10", borderColor: "hover:border-indigo-500/50", shadowColor: "group-hover:shadow-indigo-500/10" },
   { name: "Framer Motion", description: "Animations", src: "/icons/framer-motion.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
-  { name: "Cursor AI", description: "AI tool", src: "/icons/cursor.png", bgColor: "bg-white/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
+  { name: "Cursor AI", description: "AI tool", src: "/icons/cursor.png", bgColor: "bg-white/10", borderColor: "hover:border-white/50", shadowColor: "group-hover:shadow-purple-500/10" },
   { name: "Gemini CLI", description: "AI tool", src: "/icons/geminicli-color.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
   
 ];
