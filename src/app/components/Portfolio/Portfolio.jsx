@@ -28,13 +28,13 @@ const projects = [
   {
     title: "PokéStore",
     image: "/portfolio-imgs/PokemonLaptop.png",
-    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
+    tags: ["React", "React Redux", 'React Router', 'React Hook Form', 'Django', 'Django Rest Framework'],
     link: "/PortfolioPages/pokestore",
   },
   {
     title: "Feynman Bot",
     image: "/portfolio-imgs/BotLaptop.png",
-    tags: ["Node.js", "Discord.js", "JavaScript","Gemini AI"],
+    tags: ["Node.js", "Discord.js", "Gemini AI"],
     link: "/PortfolioPages/feynman-bot",
   },
 

@@ -33,7 +33,7 @@ const Hero = () => {
         initial={false}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[#1771BF]/10 blur-[120px] rounded-full pointer-events-none" 
+        className="absolute top-1/2 left-1/2 -translate-1/2  w-[600px] h-[400px] bg-[#1771BF]/10 blur-[120px] rounded-full pointer-events-none" 
       />
      
       {/* HERO_HEADER */}
@@ -41,41 +41,41 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="text-center flex flex-col gap-5 z-10"
+        className="text-center flex flex-col gap-5 z-10 p-19"
       >
-        <motion.span variants={itemVariants} className="text-[#1771BF] font-medium tracking-widest">
-          BASED IN POLAND
-        </motion.span>
-        
-        <motion.h1 variants={itemVariants} className=" text-7xl md:text-8xl font-bold tracking-tighter text-gray-300">
-          Software Engineer
-        </motion.h1>
-        
-        <motion.span variants={itemVariants} className="text-xl text-gray-400">
-         Full-stack engineer with a sharp eye for the frontend.
-        </motion.span>
-        
-        {/* BUTTONS_BOX */}
-        <motion.div variants={itemVariants} className="flex gap-4 justify-center mt-4">
-          {/* WORK BUTTON */}
-          <Link 
-            href="#work" 
-            className="bg-gray-300 text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors font-semibold shadow-lg shadow-white/5"
-          >
-            See Work
-            <FontAwesomeIcon icon={faEye} className="h-5 w-5" />
-          </Link>
-          
-          {/* CV BUTTON */}
-          <a
-            href="/Maciej_Lach_CV.pdf" 
-            className="flex items-center gap-2 py-3 px-8 rounded-full border border-[#1771BF] text-[#1771BF] hover:bg-[#1771BF]/10 transition-colors font-semibold"
-            download
-          >
-            Download CV
-            <FontAwesomeIcon icon={faDownload} className="h-5 w-5" />
-          </a>
-        </motion.div>
+            <motion.span variants={itemVariants} className="text-[#1771BF] font-medium tracking-widest">
+              BASED IN POLAND
+            </motion.span>
+            
+            <motion.h1 variants={itemVariants} className=" text-7xl md:text-8xl font-bold tracking-tighter text-gray-300">
+              Software Engineer
+            </motion.h1>
+            
+            <motion.span variants={itemVariants} className="text-xl text-gray-400">
+            Full-stack engineer with a sharp eye for the frontend.
+            </motion.span>
+            
+            {/* BUTTONS_BOX */}
+            <motion.div variants={itemVariants} className=" flex flex-col md:flex-row gap-4 justify-center mt-4">
+              {/* WORK BUTTON */}
+              <Link 
+                href="#work" 
+                className="bg-gray-300 text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors font-semibold shadow-lg shadow-white/5"
+              >
+                See Work
+                <FontAwesomeIcon icon={faEye} className="h-5 w-5" />
+              </Link>
+              
+              {/* CV BUTTON */}
+              <a
+                href="/Maciej_Lach_CV.pdf" 
+                className="flex items-center gap-2 py-3 px-8 rounded-full border border-[#1771BF] text-[#1771BF] hover:bg-[#1771BF]/10 transition-colors font-semibold"
+                download
+              >
+                Download CV
+                <FontAwesomeIcon icon={faDownload} className="h-5 w-5" />
+              </a>
+            </motion.div>
       </motion.div>
     </section>
   );

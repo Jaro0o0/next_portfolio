@@ -51,7 +51,7 @@ export const items = [
         title: 'Feynman Bot',
         subtitle: 'AI-powered Discord learning bot built with Node.js & Gemini API',
         img: "/portfolio-imgs/FallBotLaptop.png",
-        tech: ["Node.js", "Discord.js", 'JavaScript', 'Gemini AI'],
+        tech: ["Node.js", "Discord.js", 'Gemini AI'],
         code: "/CommingSoon/bot",
         demo: "/CommingSoon/bot",
         desc: 'This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.'

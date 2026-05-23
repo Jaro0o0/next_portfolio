@@ -45,8 +45,7 @@ function ProjectPage() {
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#121212_1px,transparent_1px),linear-gradient(to_bottom,#121212_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
-
-        {/* LIGHT EFFECT */}
+           {/* LIGHT EFFECT */}
         <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -91,10 +90,11 @@ function ProjectPage() {
               />
             </motion.div>
 
+          
             {/* TEXT_COL */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               <motion.div variants={itemVariants}>
-                <h1 className="text-white text-5xl font-bold mb-6">Project Overview</h1>
+                <h1 className="text-white text-5xl md:text-6xl font-bold mb-6">Project Overview</h1>
                 {/* ICONS_BOX */}
                 <div className="flex flex-wrap gap-2">
                   {project.tech.map((tag) => (
@@ -105,11 +105,9 @@ function ProjectPage() {
                 </div>
                 {/* BUTTONS_BOX */}
                 <div className="flex mt-8 gap-4">
-                  {/* BBUTTON */}
                   <Link href={project.code} className="bg-white text-black py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-[#1771BF] hover:text-white transition-all shadow-xl shadow-black/20">
                     Code <FontAwesomeIcon icon={faCode} className="h-5 w-5" />
                   </Link>
-                  {/* BBUTTON */}
                   <Link href={project.demo} className="border border-white/10 text-white py-4 px-8 rounded-xl flex items-center gap-3 font-bold hover:bg-white/5 transition-all">
                     Demo <FontAwesomeIcon icon={faGlobe} className="h-5 w-5" />
                   </Link>
