@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Medical Website",
     image: "/portfolio-imgs/MedicalLaptop.png",
-    tags: ["React", "Framer Motion", "Material UI", "React Router",'React Hook Form','EmailJS'],
+    tags: ["React", "Framer Motion", "Material UI", "React Router",'React Hook Form','Email.js'],
     link:  "/PortfolioPages/medical-website", 
   },
   {
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Crypto Forge",
     image: "/portfolio-imgs/CryptoLaptop.png",
-    tags: ["NextJS", "Framer Motion", "Tailwind CSS","Material UI", ],
+    tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI", ],
     link: "/PortfolioPages/crypto-forge",
   },
   {

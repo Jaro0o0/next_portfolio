@@ -14,7 +14,7 @@ const techItems = [
   { name: "Git", description: "Version Control", icon: faGitAlt, color: "text-[#F05032]", bgColor: "bg-orange-600/10", borderColor: "hover:border-[#F05032]/50", shadowColor: "group-hover:shadow-orange-600/10" },
   { name: "Django", description: "Web Framework", src: "/icons/django.svg", bgColor: "bg-emerald-900/20", borderColor: "hover:border-emerald-500/50", shadowColor: "group-hover:shadow-emerald-500/10" },
   { name: "Postgres", description: "Database", src: "/icons/postgres.png", bgColor: "bg-blue-500/10", borderColor: "hover:border-blue-400/50", shadowColor: "group-hover:shadow-blue-400/10" },
-  { name: "NextJS", description: "Framework", src: "/icons/next.svg", bgColor: "bg-white/10", borderColor: "hover:border-white/50", className: "invert brightness-200", shadowColor: "group-hover:shadow-white/10" },
+  { name: "Next.js", description: "Framework", src: "/icons/next.svg", bgColor: "bg-white/10", borderColor: "hover:border-white/50", className: "invert brightness-200", shadowColor: "group-hover:shadow-white/10" },
   { name: "Material UI", description: "UI Library", src: "/icons/material.svg", bgColor: "bg-blue-600/10", borderColor: "hover:border-blue-600/50", shadowColor: "group-hover:shadow-blue-600/10" },
   { name: "React Redux", description: "Library", src: "/icons/redux.png", bgColor: "bg-indigo-500/10", borderColor: "hover:border-indigo-500/50", shadowColor: "group-hover:shadow-indigo-500/10" },
   { name: "Framer Motion", description: "Animations", src: "/icons/framer-motion.svg", bgColor: "bg-purple-500/10", borderColor: "hover:border-purple-500/50", shadowColor: "group-hover:shadow-purple-500/10" },
