@@ -86,7 +86,7 @@ function ProjectPage() {
                 alt={project.title}
                 width={1000}
                 height={1000}
-                className="relative rounded-md shadow-2xl border border-white/5 h-[300px] md:h-auto w-full object-cover object-[-0.5%_center] md:object-center"
+                className="relative rounded-md shadow-2xl border border-white/5 h-[300px] md:h-auto w-full object-cover  md:object-center"
               />
             </motion.div>
 
