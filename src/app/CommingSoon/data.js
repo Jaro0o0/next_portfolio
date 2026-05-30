@@ -8,7 +8,7 @@ export const timers =  [
     },
     {
         slug:'bot',
-        time:'2026-05-27T00:00:00'
+        time:'2026-06-06T00:00:00'
     },
     {
         slug:'all-work',
