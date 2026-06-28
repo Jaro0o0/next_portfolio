@@ -40,7 +40,7 @@ export const items = [
         title: 'Crypto Forge',
         subtitle: 'Cryptocurrency exchange and price tracking platform built with Next.js',
         img: "/portfolio-imgs/crypto-forge.png",
-        tech: ["Next.js", "Framer Motion", 'Tailwind CSS', 'Material UI', 'ThreeJS'],
+        tech: ["Next.js", "Framer Motion", 'Tailwind CSS', 'Material UI', 'Three.js'],
         code: "https://github.com/Jaro0o0/CryptoForge",
         demo: "https://crypto-forge-omega.vercel.app",
         desc: '  This project is a modern cryptocurrency exchange and price tracking platform called CryptoForge, built using Next.js for optimized performance, server-side rendering, and fast page loads. It leverages Material UI and Tailwind CSS to create a clean, consistent, and responsive interface, ensuring a professional and intuitive user experience across all devices.',

@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Crypto Forge",
     image: "/portfolio-imgs/CryptoLaptop.png",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI","JavaScript" ],
+    tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI","JavaScript","Three.js" ],
     link: "/PortfolioPages/crypto-forge",
   },
  
@@ -43,7 +43,7 @@ function Portfolio() {
         >
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">My work</h2>
-            <p className="text-zinc-400 max-w-md">Explore my latest projects where I combine design and engineering.</p>
+            <p className="text-zinc-400 max-w-md">Explore my latest projects</p>
           </div>
 
           <Link 
