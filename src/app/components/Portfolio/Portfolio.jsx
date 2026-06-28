@@ -8,35 +8,24 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Medical Website",
+    title: "Medical Clinic",
     image: "/portfolio-imgs/MedicalLaptop.png",
-    tags: ["React", "Framer Motion", "Material UI", "React Router",'React Hook Form','Email.js'],
+    tags: ["React.js", "Framer Motion", "Material UI", "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
     link:  "/PortfolioPages/medical-website", 
   },
   {
-    title: "Fitness Website",
-    image: "/portfolio-imgs/FitnessLaptop.png",
-    tags: ["Vite", "Swiper.js", "JavaScript",'Tailwind'],
-    link: "/PortfolioPages/fitness-website",
+    title: "Skyline Weather",
+    image: "/portfolio-imgs/skyline-weather-laptop.png",
+    tags: ["Next.js", "Tailwind Css", "TypeScript",],
+    link: "/PortfolioPages/skyline-weather",
   },
   {
     title: "Crypto Forge",
     image: "/portfolio-imgs/CryptoLaptop.png",
-    tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI", ],
+    tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI","JavaScript" ],
     link: "/PortfolioPages/crypto-forge",
   },
-  {
-    title: "PokéStore",
-    image: "/portfolio-imgs/PokemonLaptop.png",
-    tags: ["React", "React Redux", 'React Router', 'React Hook Form', 'Django', 'Django Rest Framework'],
-    link: "/PortfolioPages/pokestore",
-  },
-  {
-    title: "Feynman Bot",
-    image: "/portfolio-imgs/BotLaptop.png",
-    tags: ["Node.js", "Discord.js", "Gemini AI"],
-    link: "/PortfolioPages/feynman-bot",
-  },
+ 
 
 ];
 
