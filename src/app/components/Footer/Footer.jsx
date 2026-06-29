@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import ShootingStar from "../ShootingStars/ShootingStars";
 
 function Footer() {
@@ -41,8 +42,8 @@ function Footer() {
                     <div>
                         <h4 className="text-white font-medium mb-4">Navigate</h4>
                         <ul className="space-y-3 text-zinc-500">
-                            <li><a href="#home" className="hover:text-white transition-colors">Home</a></li>
-                            <li><a href="#work" className="hover:text-white transition-colors">Projects</a></li>
+                            <li><ScrollLink href="/#home" className="hover:text-white transition-colors">Home</ScrollLink></li>
+                            <li><ScrollLink href="/#work" className="hover:text-white transition-colors">Projects</ScrollLink></li>
                         </ul>
                     </div>
 

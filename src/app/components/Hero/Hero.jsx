@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
@@ -58,13 +58,13 @@ const Hero = () => {
             {/* BUTTONS_BOX */}
             <motion.div variants={itemVariants} className=" flex flex-col md:flex-row gap-4 justify-center mt-4">
               {/* WORK BUTTON */}
-              <Link 
-                href="#work" 
+              <ScrollLink 
+                href="/#work" 
                 className="bg-gray-300 text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors font-semibold shadow-lg shadow-white/5"
               >
                 See Work
                 <FontAwesomeIcon icon={faEye} className="h-5 w-5" />
-              </Link>
+              </ScrollLink>
               
               {/* CV BUTTON */}
               <a

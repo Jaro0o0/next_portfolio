@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ScrollLink from "../ScrollLink/ScrollLink";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -38,14 +39,14 @@ const Header = () => {
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
           {isHomePage && (
             <li>
-              <Link href="#work" className="hover:text-white transition-colors">Work</Link>
+              <ScrollLink href="/#work" className="hover:text-white transition-colors">Work</ScrollLink>
             </li>
           )}
           <li>
-            <Link href={isHomePage ? "#home" : "/"} className="hover:text-white transition-colors">Home</Link>
+            <ScrollLink href={isHomePage ? "/#home" : "/"} className="hover:text-white transition-colors">Home</ScrollLink>
           </li>
           <li>
-            <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
+            <ScrollLink href="/#contact" className="hover:text-white transition-colors">Contact</ScrollLink>
           </li>
         </ul>
 
@@ -100,7 +101,7 @@ const Header = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 }}
               >
-                <Link href="#work" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Work</Link>
+                <ScrollLink href="/#work" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Work</ScrollLink>
               </motion.li>
             )}
             <motion.li 
@@ -108,14 +109,14 @@ const Header = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <Link href={isHomePage ? "#home" : "/"} onClick={() => setOpen(false)} className="hover:text-white transition-colors">Home</Link>
+              <ScrollLink href={isHomePage ? "/#home" : "/"} onClick={() => setOpen(false)} className="hover:text-white transition-colors">Home</ScrollLink>
             </motion.li>
             <motion.li 
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <Link href="#contact" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Contact</Link>
+              <ScrollLink href="/#contact" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Contact</ScrollLink>
             </motion.li>
           </ul>
         </motion.div>
