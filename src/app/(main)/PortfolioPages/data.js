@@ -6,7 +6,7 @@ export const items = [
         slug: 'medical-website',
         title: 'Medical Website',
         subtitle: 'Physiotherapy clinic website built with React & Material UI',
-        img: "/portfolio-imgs/MedicalLaptop.png",
+        img: "/portfolio-imgs/Medical.png",
         tech: ["React",  'React Router', 'React Hook Form', 'Material UI', "Framer Motion",'Email.js'],
         code: "https://github.com/Jaro0o0/Gabinet",
         demo: "https://www.kormedic.pl/",
@@ -17,22 +17,11 @@ export const items = [
         slug: 'skyline-weather',
         title: 'Skyline Weather',
         subtitle: 'Weather forecast web application built with Next.js & Tailwind CSS',
-        img: "/portfolio-imgs/skyline-weather-laptop.png",
+        img: "/portfolio-imgs/skyline-weather.png",
         tech: ["Next.js", "TypeScript", "Tailwind CSS"],
         code: "https://github.com/Jaro0o0/skyline_weather",
         demo: "https://skyline-weather-pink.vercel.app",
         desc: 'Skyline Weather is a weather forecast web application built with Next.js and Tailwind CSS. Users can search for current weather and forecasts by city name. API requests are handled through Next.js server-side routes to securely protect the API key, with data provided by the OpenWeather API.',
-    },
-    {
-        //Fitness
-        slug: 'fitness-website',
-        title: 'Fitness Website',
-        subtitle: 'Simple gym website built in Vite with custom router',
-        img: "/portfolio-imgs/FitnessLaptop.png",
-        tech: ["Vite", "Swiper.js", 'JavaScript', 'Tailwind CSS'],
-        code: "https://github.com/Jaro0o0/FitnessWebsite",
-        demo: "https://fitness-gym-five-weld.vercel.app/",
-        desc: 'This project is a modern gym website built with Vite, JavaScript, and Tailwind CSS, designed to showcase fitness offerings through a clean and dynamic interface. It leverages Swiper.js to deliver smooth, interactive carousels and seamless content navigation ensuring a fast, visually engaging, and fully responsive experience across all devices.',
     },
     {
         //Crypto
@@ -45,26 +34,37 @@ export const items = [
         demo: "https://crypto-forge-omega.vercel.app",
         desc: '  This project is a modern cryptocurrency exchange and price tracking platform called CryptoForge, built using Next.js for optimized performance, server-side rendering, and fast page loads. It leverages Material UI and Tailwind CSS to create a clean, consistent, and responsive interface, ensuring a professional and intuitive user experience across all devices.',
     },
-    {
-        //Pokemon
-        slug: 'pokestore',
-        title: 'PokéStore',
-        subtitle: 'Full-stack e-commerce platform for buying Pokémon cards',
-        img: "/portfolio-imgs/FallPokemonLaptopp.png",
-        tech: ["React", "React Redux", 'React Router', 'React Hook Form', 'Django', 'Django Rest Framework'],
-        code: '/CommingSoon/pokemon',
-        demo: '/CommingSoon/pokemon',
-        desc: 'This project  is Full-stack e-commerce platform for buying Pokémon cards. Django REST Framework backend delivers a REST API handling user authentication, product management, and order processing. React frontend with Redux for global state management of the shopping cart .'
-    },
-    {
-        //Feynman
-        slug: 'feynman-bot',
-        title: 'Feynman Bot',
-        subtitle: 'AI-powered Discord learning bot built with Node.js & Gemini API',
-        img: "/portfolio-imgs/FallBotLaptop.png",
-        tech: ["Node.js", "Discord.js", 'Gemini AI'],
-        code: "/CommingSoon/bot",
-        demo: "/CommingSoon/bot",
-        desc: 'This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.'
-    },
+    // {
+    //     //Fitness
+    //     slug: 'fitness-website',
+    //     title: 'Fitness Website',
+    //     subtitle: 'Simple gym website built in Vite with custom router',
+    //     img: "/portfolio-imgs/FitnessLaptop.png",
+    //     tech: ["Vite", "Swiper.js", 'JavaScript', 'Tailwind CSS'],
+    //     code: "https://github.com/Jaro0o0/FitnessWebsite",
+    //     demo: "https://fitness-gym-five-weld.vercel.app/",
+    //     desc: 'This project is a modern gym website built with Vite, JavaScript, and Tailwind CSS, designed to showcase fitness offerings through a clean and dynamic interface. It leverages Swiper.js to deliver smooth, interactive carousels and seamless content navigation ensuring a fast, visually engaging, and fully responsive experience across all devices.',
+    // },
+    // {
+    //     //Pokemon
+    //     slug: 'pokestore',
+    //     title: 'PokéStore',
+    //     subtitle: 'Full-stack e-commerce platform for buying Pokémon cards',
+    //     img: "/portfolio-imgs/FallPokemonLaptopp.png",
+    //     tech: ["React", "React Redux", 'React Router', 'React Hook Form', 'Django', 'Django Rest Framework'],
+    //     code: '/CommingSoon/pokemon',
+    //     demo: '/CommingSoon/pokemon',
+    //     desc: 'This project  is Full-stack e-commerce platform for buying Pokémon cards. Django REST Framework backend delivers a REST API handling user authentication, product management, and order processing. React frontend with Redux for global state management of the shopping cart .'
+    // },
+    // {
+    //     //Feynman
+    //     slug: 'feynman-bot',
+    //     title: 'Feynman Bot',
+    //     subtitle: 'AI-powered Discord learning bot built with Node.js & Gemini API',
+    //     img: "/portfolio-imgs/FallBotLaptop.png",
+    //     tech: ["Node.js", "Discord.js", 'Gemini AI'],
+    //     code: "/CommingSoon/bot",
+    //     demo: "/CommingSoon/bot",
+    //     desc: 'This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.'
+    // },
 ]

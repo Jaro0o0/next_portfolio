@@ -15,7 +15,7 @@ function Footer() {
                             Let's build something <span className="text-sky-500">together</span>
                         </h2>
                         <p className="text-zinc-400 text-lg mb-8 max-w-xl mx-auto">
-                            I'm currently available for freelance work and collaboration. 
+                            I'm currently available for work. 
                             Have a project in mind? Let's talk!
                         </p>
                         <Link 

@@ -16,7 +16,7 @@ const projects = [
   {
     title: "Skyline Weather",
     image: "/portfolio-imgs/skyline-weather-laptop.png",
-    tags: ["Next.js", "Tailwind Css", "TypeScript",],
+    tags: ["Next.js", "Tailwind CSS", "TypeScript",],
     link: "/PortfolioPages/skyline-weather",
   },
   {
