@@ -81,13 +81,15 @@ function ProjectPage() {
             {/* IMG_BOX */}
             <motion.div variants={itemVariants} className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-[#1771BF] to-cyan-500 rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-              <Image
-                src={project.img}
-                alt={project.title}
-                width={1000}
-                height={1000}
-                className="relative rounded-md shadow-2xl border border-white/5 h-[300px] md:h-auto w-full object-cover  md:object-center"
-              />
+              <div className="relative rounded-md shadow-2xl border border-white/5 bg-[#0b0b0b] p-2 md:p-0">
+                <Image
+                  src={project.img}
+                  alt={project.title}
+                  width={1000}
+                  height={1000}
+                  className="w-full h-auto max-h-[300px] md:max-h-none rounded-md object-contain md:object-cover md:object-center"
+                />
+              </div>
             </motion.div>
 
           
