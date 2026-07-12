@@ -1,442 +1,64 @@
 export const codeData = `
-const developer = {
+ <section id="about" className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -left-36 top-10 h-80 w-80 rounded-full bg-[#1771BF]/15 blur-[120px]" />
+        <div className="absolute -right-36 bottom-0 h-96 w-96 rounded-full bg-sky-400/10 blur-[140px]" />
+        <div className="absolute -left-12 top-0 hidden w-[38rem] opacity-[0.07] lg:block">
+          <Code language="jsx" showCopyButton={false}>{codeData}</Code>
+        </div>
+      </div>
 
-  name: "Maciej Lach",
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.18 }}
+        variants={containerVariants}
+        className="relative mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-[#0d0d0f]/85 shadow-2xl shadow-black/30 backdrop-blur-sm lg:grid-cols-[1.05fr_0.95fr]"
+      >
+        <div className="relative p-7 sm:p-10 lg:p-14">
+          <div aria-hidden="true" className="absolute inset-y-0 right-0 hidden w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
 
-  role: "Software Engineer",
+          <motion.p variants={itemVariants} className="mb-5 flex items-center gap-3 text-xs font-bold tracking-[0.24em] text-[#4ba3ee]">
+            <span className="h-px w-9 bg-[#1771BF]" />
+            ABOUT ME
+          </motion.p>
 
-  location: "Poland",
+          <motion.div variants={itemVariants}>
+            <h2 className="max-w-md text-4xl font-bold tracking-tight text-white sm:text-5xl">
+              Turning ideas into thoughtful digital experiences.
+            </h2>
+            <p className="mt-5 text-lg font-medium text-[#73b7ed]">Maciej Lach · Software Engineer</p>
+          </motion.div>
 
-  age: 22,
+          <motion.p variants={itemVariants} className="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">
+            I&apos;m a front-end focused software engineer who enjoys creating fast, polished interfaces with React, TypeScript and Next.js. I combine clean code with purposeful motion and practical user experience.
+          </motion.p>
 
-  email: "maciej@example.com",
+          <motion.ul variants={itemVariants} className="mt-9 grid gap-3 sm:grid-cols-3">
+            {details.map(({ icon, label, value }) => (
+              <li key={label} className="group rounded-2xl border border-white/8 bg-white/[0.025] p-4 transition duration-300 hover:-translate-y-1 hover:border-[#1771BF]/50 hover:bg-[#1771BF]/[0.07]">
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#1771BF]/15 text-[#54acef] transition group-hover:bg-[#1771BF] group-hover:text-white">
+                  <FontAwesomeIcon icon={icon} />
+                </div>
+                <p className="mt-4 text-xs font-medium uppercase tracking-wider text-zinc-500">{label}</p>
+                <p className="mt-1 text-sm font-semibold text-zinc-200">{value}</p>
+              </li>
+            ))}
+          </motion.ul>
 
-  github: "https://github.com/mlach",
+          <motion.div variants={itemVariants} className="mt-10 border-t border-white/8 pt-6">
+            <p className="text-sm leading-7 text-zinc-500">
+              Also working with Material UI, Framer Motion, Tailwind CSS, Node.js, Express and Docker.
+            </p>
+          </motion.div>
+        </div>
 
-  linkedin: "https://linkedin.com/in/mlach",
+        <div className="relative border-t border-white/10 bg-white/[0.025] p-7 sm:p-10 lg:border-t-0 lg:p-14">
+          <motion.div variants={itemVariants}>
+            <p className="text-xs font-bold tracking-[0.2em] text-[#4ba3ee]">LET&apos;S CONNECT</p>
+            <h2 className="mt-3 text-3xl font-bold tracking-tight text-white">Have a project in mind?</h2>
+            <p className="mt-3 leading-7 text-zinc-400">Tell me a little about it and I&apos;ll get back to you.</p>
+          </motion.div>
 
-  twitter: "https://twitter.com/mlach_dev",
 
-  website: "https://mlach.dev",
-
-  skills: [
-    "JavaScript",
-    "TypeScript",
-    "React",
-    "Next.js",
-    "Node.js",
-    "Python",
-    "FastAPI",
-    "PostgreSQL",
-    "MongoDB",
-    "Docker",
-    "Kubernetes",
-    "Git",
-    "Tailwind CSS",
-    "Framer Motion",
-    "Redux",
-    "GraphQL",
-    "REST APIs",
-    "Redis",
-    "AWS",
-    "Vercel",
-    "Prisma",
-    "Firebase",
-    "Socket.io",
-    "Webpack",
-    "Vite",
-    "Jest",
-    "Cypress",
-    "Figma",
-    "Linux",
-    "Nginx"
-  ],
-
-  passion: "building clean & efficient code",
-
-  coffee: true,
-
-  remote: true,
-
-  openToWork: true,
-
-  languages_spoken: [
-    "Polish",
-    "English",
-    "German"
-  ],
-
-  education: "BSc Computer Science, AGH University",
-
-  certifications: [
-    "AWS Cloud Practitioner",
-    "Docker Certified Associate",
-    "Google UX Design"
-  ],
-
-  hobbies: [
-    "open source",
-    "blogging",
-    "gaming",
-    "hiking",
-    "photography"
-  ],
-
-  bio: "Passionate software engineer with 2+ years of experience building full-stack web applications. I love creating elegant solutions to complex problems and contributing to the open source community."
-
-};
-
-const projects = [
-
-  {
-    id: 1,
-    name: "Portfolio Website",
-    description: "Personal portfolio built with Next.js and Framer Motion",
-    tech: [
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "TypeScript"
-    ],
-    status: "active",
-    stars: 42,
-    forks: 8,
-    watchers: 15,
-    issues: 2,
-    repo: "https://github.com/mlach/portfolio",
-    demo: "https://mlach.dev",
-    featured: true,
-    year: 2024,
-    license: "MIT"
-  },
-
-  {
-    id: 2,
-    name: "E-Commerce Platform",
-    description: "Full-stack online store with Stripe payments and admin dashboard",
-    tech: [
-      "React",
-      "Node.js",
-      "PostgreSQL",
-      "Stripe",
-      "Redis",
-      "Docker"
-    ],
-    status: "completed",
-    stars: 128,
-    forks: 23,
-    watchers: 45,
-    issues: 0,
-    repo: "https://github.com/mlach/ecommerce",
-    demo: "https://shop.mlach.dev",
-    featured: true,
-    year: 2024,
-    license: "MIT"
-  },
-
-  {
-    id: 3,
-    name: "Task Manager App",
-    description: "Productivity app with drag-and-drop and team collaboration",
-    tech: [
-      "Python",
-      "FastAPI",
-      "MongoDB",
-      "React",
-      "WebSocket"
-    ],
-    status: "in progress",
-    stars: 67,
-    forks: 11,
-    watchers: 22,
-    issues: 5,
-    repo: "https://github.com/mlach/taskmanager",
-    demo: "https://tasks.mlach.dev",
-    featured: true,
-    year: 2025,
-    license: "MIT"
-  },
-
-  {
-    id: 4,
-    name: "Chat Application",
-    description: "Real-time messaging with file sharing and video calls",
-    tech: [
-      "Socket.io",
-      "Express",
-      "Redis",
-      "React",
-      "WebRTC"
-    ],
-    status: "completed",
-    stars: 93,
-    forks: 17,
-    watchers: 30,
-    issues: 1,
-    repo: "https://github.com/mlach/chatapp",
-    demo: "https://chat.mlach.dev",
-    featured: false,
-    year: 2024,
-    license: "Apache-2.0"
-  },
-
-  {
-    id: 5,
-    name: "Weather Dashboard",
-    description: "Weather forecasting app with interactive charts",
-    tech: [
-      "JavaScript",
-      "OpenWeather API",
-      "Chart.js"
-    ],
-    status: "archived",
-    stars: 34,
-    forks: 5,
-    watchers: 8,
-    issues: 0,
-    repo: "https://github.com/mlach/weather",
-    demo: null,
-    featured: false,
-    year: 2023,
-    license: "MIT"
-  },
-
-  {
-    id: 6,
-    name: "AI Content Generator",
-    description: "GPT-powered content creation with Markdown and PDF export",
-    tech: [
-      "Next.js",
-      "OpenAI API",
-      "Prisma",
-      "PostgreSQL"
-    ],
-    status: "active",
-    stars: 215,
-    forks: 41,
-    watchers: 60,
-    issues: 3,
-    repo: "https://github.com/mlach/ai-writer",
-    demo: "https://writer.mlach.dev",
-    featured: true,
-    year: 2025,
-    license: "MIT"
-  },
-
-  {
-    id: 7,
-    name: "DevOps Pipeline Tool",
-    description: "CI/CD dashboard for monitoring builds and deployments",
-    tech: [
-      "Python",
-      "FastAPI",
-      "Docker",
-      "Kubernetes",
-      "Grafana"
-    ],
-    status: "in progress",
-    stars: 56,
-    forks: 9,
-    watchers: 18,
-    issues: 4,
-    repo: "https://github.com/mlach/devops-tool",
-    demo: null,
-    featured: false,
-    year: 2025,
-    license: "MIT"
-  },
-
-  {
-    id: 8,
-    name: "Habit Tracker",
-    description: "Gamified habit tracking with streaks and analytics",
-    tech: [
-      "React Native",
-      "Node.js",
-      "MongoDB",
-      "Firebase"
-    ],
-    status: "completed",
-    stars: 88,
-    forks: 14,
-    watchers: 25,
-    issues: 0,
-    repo: "https://github.com/mlach/habits",
-    demo: "https://habits.mlach.dev",
-    featured: false,
-    year: 2024,
-    license: "MIT"
-  },
-
-  {
-    id: 9,
-    name: "Blog Engine",
-    description: "Custom static blog generator with Markdown support and syntax highlighting",
-    tech: [
-      "Node.js",
-      "Marked",
-      " Prism.js",
-      "CSS"
-    ],
-    status: "archived",
-    stars: 21,
-    forks: 3,
-    watchers: 5,
-    issues: 0,
-    repo: "https://github.com/mlach/blog-engine",
-    demo: null,
-    featured: false,
-    year: 2023,
-    license: "MIT"
-  }
-
-];
-
-const experience = [
-
-  {
-    company: "TechCorp",
-    role: "Frontend Developer",
-    period: "2024-2025",
-    description: "Built responsive web apps with React and Next.js",
-    technologies: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS"
-    ]
-  },
-
-  {
-    company: "StartupHub",
-    role: "Full-Stack Engineer",
-    period: "2023-2024",
-    description: "Developed REST APIs and deployed microservices on AWS",
-    technologies: [
-      "Node.js",
-      "Python",
-      "AWS",
-      "Docker"
-    ]
-  }
-
-];
-
-const socials = {
-  github: "https://github.com/mlach",
-  linkedin: "https://linkedin.com/in/mlach",
-  twitter: "https://twitter.com/mlach_dev",
-  email: "maciej@example.com",
-  website: "https://mlach.dev"
-};
-
-const stats = {
-  total_commits: 2500,
-  total_repos: 15,
-  total_stars: 744,
-  total_forks: 131,
-  contributions_this_year: 890,
-  longest_streak: 45
-};
-
-function getDeveloperInfo(dev) {
-  return {
-    ...dev,
-    experience: "2+ years",
-    languages: [
-      "JavaScript",
-      "TypeScript",
-      "Python"
-    ],
-    editor: "VS Code",
-    OS: "Linux",
-    timezone: "CET",
-    available: true,
-    github_contributions: 1200,
-    open_source_repos: 12,
-    blog_posts: 8
-  };
-}
-
-function calculateTotalStars(projects) {
-  return projects.reduce(
-    (acc, p) => acc + p.stars,
-    0
-  );
-}
-
-function calculateTotalForks(projects) {
-  return projects.reduce(
-    (acc, p) => acc + p.forks,
-    0
-  );
-}
-
-function getFeaturedProjects(projects) {
-  return projects.filter(
-    p => p.featured
-  );
-}
-
-function getProjectsByStatus(projects, status) {
-  return projects.filter(
-    p => p.status === status
-  );
-}
-
-function getProjectsByYear(projects, year) {
-  return projects.filter(
-    p => p.year === year
-  );
-}
-
-function sortProjectsByStars(projects) {
-  return [...projects].sort(
-    (a, b) => b.stars - a.stars
-  );
-}
-
-function formatProjectCard(p) {
-  return \`[\${p.status.toUpperCase()}] \${p.name} - \${p.stars}⭐ \${p.forks}🍴\`;
-}
-
-function getTopProjects(projects, count) {
-  return sortProjectsByStars(projects)
-    .slice(0, count);
-}
-
-const info = getDeveloperInfo(developer);
-const totalStars = calculateTotalStars(projects);
-const totalForks = calculateTotalForks(projects);
-const featured = getFeaturedProjects(projects);
-const active = getProjectsByStatus(projects, "active");
-const completed = getProjectsByStatus(projects, "completed");
-const topProjects = getTopProjects(projects, 3);
-
-export {
-  developer,
-  projects,
-  experience,
-  socials,
-  stats,
-  info,
-  totalStars,
-  totalForks,
-  featured,
-  active,
-  completed,
-  topProjects,
-  getDeveloperInfo,
-  calculateTotalStars,
-  calculateTotalForks,
-  getFeaturedProjects,
-  getProjectsByStatus,
-  getProjectsByYear,
-  sortProjectsByStars,
-  formatProjectCard,
-  getTopProjects
-};
-
-export default function About() {
-  return <div>About Section</div>;
-}`
+`
