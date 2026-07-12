@@ -31,8 +31,8 @@ const techItems = [
 function TechStack() {
   return (
     <section className="py-24 px-4 sm:px-0 relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,rgba(120,119,198,0.05)_0,transparent_70%)] pointer-events-none" />
+     
+      
 
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* TEXT_BOX */}

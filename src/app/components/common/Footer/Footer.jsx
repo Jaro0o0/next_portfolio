@@ -19,12 +19,12 @@ function Footer() {
                             I'm currently available for work. 
                             Have a project in mind? Let's talk!
                         </p>
-                        <Link 
+                        {/* <Link 
                             href="mailto:jar0dev80@gmail.com"
                             className="inline-block bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-zinc-200 transition-all hover:scale-105"
                         >
                             Send an email
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
 
