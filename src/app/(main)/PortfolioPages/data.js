@@ -67,4 +67,15 @@ export const items = [
     //     demo: "/CommingSoon/bot",
     //     desc: 'This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.'
     // },
+     {
+        //CHAT
+        slug: 'crypto-forge',
+        title: 'Real Time Chat',
+        subtitle: 'Cryptocurrency exchange and price tracking platform built with Next.js',
+        img: "/portfolio-imgs/crypto-forge.png",
+        tech: ["Next.js", "Framer Motion", 'Tailwind CSS', 'Material UI', 'Three.js'],
+        code: "https://github.com/Jaro0o0/CryptoForge",
+        demo: "https://crypto-forge-omega.vercel.app",
+        desc: 'Crypto Forge is a cryptocurrency exchange website that displays live crypto prices, giving users an up-to-date view of the current market. Built with Next.js, the application handles API requests on the server side to securely fetch pricing data and deliver it to the client. A Three.js 3D model is integrated into the interface with lazy loading, so the visual element loads only when needed and keeps the initial page performance fast.',
+    },
 ]
