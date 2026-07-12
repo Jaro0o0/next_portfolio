@@ -16,24 +16,8 @@ import { codeData } from "../../../lib/codeData.js";
 
 //FORMS
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser';
-
-// SuBMIT FORM
- const onSubmit = (data) => {
-        const loadingToast = toast.loading('Wysyłanie wiadomości...');
-       
-        
-        emailjs.send(process.env.VITE_EMAILJS_SERVICE_ID, process.env.VITE_EMAILJS_TEMPLATE_ID, data, import.meta.env.VITE_EMAILJS_PUBLIC_KEY)
-            .then(() => {
-                toast.success('Wiadomość została wysłana pomyślnie!', { id: loadingToast });
-                reset();
-            })
-            .catch(() => {
-                toast.error('Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.', { id: loadingToast });
-            });
-    }
-
-
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 
 
@@ -61,6 +45,26 @@ function About() {
   // FORM
    const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
+  // SuBMIT FORM
+  const onSubmit = (data) => {
+    const loadingToast = toast.loading("Wysyłanie wiadomości...");
+
+    emailjs
+      .send(
+        process.env.EMAILJS_SERVICE_ID,
+        process.env.EMAILJS_TEMPLATE_ID,
+        data,
+        { publicKey: process.env.EMAILJS_PUBLIC_KEY },
+      )
+      .then(() => {
+        toast.success("Wiadomość została wysłana pomyślnie!", { id: loadingToast });
+        reset();
+      })
+      .catch(() => {
+        toast.error("Wystąpił błąd podczas wysyłania wiadomości. Spróbuj ponownie.", { id: loadingToast });
+      });
+  };
+
 
 
   const containerVariants = {
@@ -75,6 +79,7 @@ function About() {
 
   return (
     <section id="about" className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32">
+      <Toaster position="top-right" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-36 top-10 h-80 w-80 rounded-full bg-[#1771BF]/15 blur-[120px]" />
         <div className="absolute -right-36 bottom-0 h-96 w-96 rounded-full bg-sky-400/10 blur-[140px]" />

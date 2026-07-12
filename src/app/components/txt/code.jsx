@@ -73,23 +73,29 @@ export const Code = ({
           )}
 
           <pre className="h-full overflow-auto whitespace-pre-wrap break-words rounded-md border border-white/10 bg-zinc-950/40 px-4 py-3 text-sm leading-6 backdrop-blur-md">
-            {tokens.map((line, index) => (
-              <div
-                key={index}
-                {...getLineProps({ line, key: index })}
-                className={`min-h-6 ${language === "bash" && tokens.length === 1 ? "before:mr-2 before:text-zinc-500 before:content-['$']" : ""}`}
-              >
-                {line.map((token, key) => {
+            {tokens.map((line, index) => {
+              const { key: lineKey, ...lineProps } = getLineProps({ line, key: index });
+
+              return (
+                <div
+                  key={lineKey}
+                  {...lineProps}
+                  className={`min-h-6 ${language === "bash" && tokens.length === 1 ? "before:mr-2 before:text-zinc-500 before:content-['$']" : ""}`}
+                >
+                  {line.map((token, key) => {
                   const isException =
                     token.content === "from" && line[key + 1]?.content === ":";
                   const highlightedToken = isException
                     ? { ...token, types: [...token.types, "key-white"] }
                     : token;
 
-                  return <span key={key} {...getTokenProps({ token: highlightedToken, key })} />;
-                })}
-              </div>
-            ))}
+                    const { key: tokenKey, ...tokenProps } = getTokenProps({ token: highlightedToken, key });
+
+                    return <span key={tokenKey} {...tokenProps} />;
+                  })}
+                </div>
+              );
+            })}
           </pre>
         </div>
       )}
