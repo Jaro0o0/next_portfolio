@@ -27,8 +27,8 @@ const projects = [
   },
   {
     title: "Real Time Chat",
-    image: "/portfolio-imgs/crypto-forge.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker']
+    image: "/portfolio-imgs/chat-laptop.png",
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker'],
     link: "/PortfolioPages/real-time-chat",
   },
 
