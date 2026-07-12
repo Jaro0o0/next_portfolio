@@ -25,7 +25,12 @@ const projects = [
     tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI","JavaScript","Three.js" ],
     link: "/PortfolioPages/crypto-forge",
   },
- 
+  {
+    title: "Real Time Chat",
+    image: "/portfolio-imgs/crypto-forge.png",
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker']
+    link: "/PortfolioPages/real-time-chat",
+  },
 
 ];
 

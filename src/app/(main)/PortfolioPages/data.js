@@ -69,13 +69,13 @@ export const items = [
     // },
      {
         //CHAT
-        slug: 'crypto-forge',
+        slug: 'real-time-chat',
         title: 'Real Time Chat',
-        subtitle: 'Cryptocurrency exchange and price tracking platform built with Next.js',
-        img: "/portfolio-imgs/crypto-forge.png",
-        tech: ["Next.js", "Framer Motion", 'Tailwind CSS', 'Material UI', 'Three.js'],
-        code: "https://github.com/Jaro0o0/CryptoForge",
-        demo: "https://crypto-forge-omega.vercel.app",
-        desc: 'Crypto Forge is a cryptocurrency exchange website that displays live crypto prices, giving users an up-to-date view of the current market. Built with Next.js, the application handles API requests on the server side to securely fetch pricing data and deliver it to the client. A Three.js 3D model is integrated into the interface with lazy loading, so the visual element loads only when needed and keeps the initial page performance fast.',
+        subtitle: 'Real-time chat web application ',
+        img: "/portfolio-imgs/chat.png",
+        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker',],
+        code: "https://github.com/Jaro0o0/realtime_chat",
+        demo: "https://realtime-chat-seven-nu.vercel.app/",
+        desc: 'Real-time chat web application built with React and TypeScript on the front end, and a backend using Node.js with the Express framework and the Socket.io library to provide real-time connections. Docker was used for backend deployment',
     },
 ]
