@@ -51,10 +51,10 @@ function About() {
 
     emailjs
       .send(
-        process.env.EMAILJS_SERVICE_ID,
-        process.env.EMAILJS_TEMPLATE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         data,
-        { publicKey: process.env.EMAILJS_PUBLIC_KEY },
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY },
       )
       .then(() => {
         toast.success("Wiadomość została wysłana pomyślnie!", { id: loadingToast });
@@ -148,7 +148,7 @@ function About() {
               <TextField fullWidth id="email" name="email" type="email" label="Email" placeholder="you@example.com" required sx={fieldStyles}  {...register('email', { required: true })} />
             </motion.div>
             <motion.div variants={itemVariants}>
-              <TextField fullWidth id="message" name="message" label="Message" placeholder="Tell me about your project" required multiline rows={4} sx={fieldStyles}  {...register('text', { required: true })} />
+              <TextField fullWidth id="message" name="message" label="Message" placeholder="Tell me about your project" required multiline rows={4} sx={fieldStyles}  {...register('message', { required: true })} />
             </motion.div>
             <motion.button
               variants={itemVariants}
