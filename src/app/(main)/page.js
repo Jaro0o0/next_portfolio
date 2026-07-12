@@ -12,8 +12,9 @@ function Home() {
       <TechStack/>
       <Portfolio/>
       {/* <Contact/>
-      <About/>
+     
        */}
+        <About/>
     </>
   );
 }

@@ -1,7 +1,8 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode, faBook, faLocationCrosshairs, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faBook, faLocationCrosshairs, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { Code } from "../txt/code.jsx";
 import { motion } from "framer-motion";
 
 function About() {
@@ -21,8 +22,105 @@ function About() {
   };
 
   return (
-    <section id="about" className="py-[120px] px-4 sm:px-0">
-      <div className="container mx-auto max-w-7xl">
+    <section id="about" className="relative overflow-hidden px-4 py-[120px] sm:px-0">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 overflow-hidden opacity-10"
+      >
+        <div className="w-full h-full">
+          <Code language="jsx" showCopyButton={false}>{`import React from "react";
+
+const developer = {
+  name: "Maciej Lach",
+  role: "Software Engineer",
+  location: "Poland",
+  age: 22,
+  email: "maciej@example.com",
+  skills: [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "PostgreSQL",
+    "MongoDB",
+    "Docker",
+    "Git",
+    "Tailwind CSS",
+    "Framer Motion",
+  ],
+  passion: "building clean & efficient code",
+  coffee: true,
+  remote: true,
+};
+
+const projects = [
+  {
+    name: "Portfolio Website",
+    description: "Personal portfolio built with Next.js",
+    tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    status: "active",
+    stars: 42,
+  },
+  {
+    name: "E-Commerce Platform",
+    description: "Full-stack online store",
+    tech: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    status: "completed",
+    stars: 128,
+  },
+  {
+    name: "Task Manager App",
+    description: "Productivity application",
+    tech: ["Python", "FastAPI", "MongoDB", "React"],
+    status: "in progress",
+    stars: 67,
+  },
+  {
+    name: "Chat Application",
+    description: "Real-time messaging platform",
+    tech: ["Socket.io", "Express", "Redis", "React"],
+    status: "completed",
+    stars: 93,
+  },
+  {
+    name: "Weather Dashboard",
+    description: "Weather forecasting app",
+    tech: ["JavaScript", "OpenWeather API", "Chart.js"],
+    status: "archived",
+    stars: 34,
+  },
+];
+
+function getDeveloperInfo(dev) {
+  return {
+    ...dev,
+    experience: "1+ year",
+    languages: ["JavaScript", "TypeScript", "Python"],
+    editor: "VS Code",
+    OS: "Linux",
+    timezone: "CET",
+    available: true,
+  };
+}
+
+function calculateTotalStars(projects) {
+  return projects.reduce((acc, p) => acc + p.stars, 0);
+}
+
+const info = getDeveloperInfo(developer);
+const totalStars = calculateTotalStars(projects);
+
+export { developer, projects, info, totalStars };
+export default function About() {
+  return <div>About Section</div>;
+}`}</Code>
+        </div>
+      </div>
+
+      <div className="relative z-10 container mx-auto max-w-7xl">
         <motion.div 
           initial="hidden"
           whileInView="show"
@@ -67,27 +165,57 @@ function About() {
 
           {/* COL_TWO */}
           <div className="bg-[#111111] p-10 rounded-3xl border border-white/5">
-            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-white mb-8">What I Do</motion.h2>
-            {/* ICONS_BOX */}
-            <ul className="space-y-6">
-              {[
-                "Full Stack Development",
-                "Frontend Development",
-                "Backend Development",
-                "API Integration"
-              ].map((service, index) => (
-                <motion.li 
-                  key={index}
-                  variants={itemVariants}
-                  className="flex items-center gap-4 text-gray-400 group"
-                >
-                  <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center group-hover:bg-[#1771BF] group-hover:border-[#1771BF] transition-all">
-                    <FontAwesomeIcon icon={faArrowRight} className="w-3 h-3 group-hover:text-white" />
-                  </div>
-                  <span className="text-lg group-hover:text-white transition-colors">{service}</span>
-                </motion.li>
-              ))}
-            </ul>
+            <motion.div variants={itemVariants}>
+              <h2 className="text-3xl font-bold text-white">Get in touch</h2>
+              <p className="mt-2 text-gray-400">Have a project in mind? Send me a message.</p>
+            </motion.div>
+
+            <form className="mt-8 flex flex-col gap-5">
+              <motion.div variants={itemVariants}>
+                <label htmlFor="name" className="sr-only">Name</label>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  required
+                  placeholder="Your name"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                />
+              </motion.div>
+
+              <motion.div variants={itemVariants}>
+                <label htmlFor="email" className="sr-only">Email address</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="Your email"
+                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                />
+              </motion.div>
+
+              <motion.div variants={itemVariants}>
+                <label htmlFor="message" className="sr-only">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={4}
+                  placeholder="Tell me about your project"
+                  className="w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                />
+              </motion.div>
+
+              <motion.button
+                variants={itemVariants}
+                type="submit"
+                className="flex w-fit items-center gap-3 rounded-lg bg-[#1771BF] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2589df]"
+              >
+                Send message
+                <FontAwesomeIcon icon={faPaperPlane} className="h-4 w-4" />
+              </motion.button>
+            </form>
           </div>
         </motion.div>
       </div>
