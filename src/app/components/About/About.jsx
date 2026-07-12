@@ -111,8 +111,9 @@ function About() {
           </motion.div>
 
           <motion.p variants={itemVariants} className="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">
-            I&apos;m a front-end focused software engineer who enjoys creating fast, polished interfaces with React, TypeScript and Next.js. I combine clean code with purposeful motion and practical user experience.
+            I&apos;m a Front-End focused Software Engineer specializing in React, TypeScript & Next.js — with hands-on experience in Node.js (Express) and Docker for full-stack projects. .
           </motion.p>
+          
 
           <motion.ul variants={itemVariants} className="mt-9 grid gap-3 sm:grid-cols-3">
             {details.map(({ icon, label, value }) => (
