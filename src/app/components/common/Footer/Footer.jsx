@@ -1,6 +1,6 @@
 import Link from "next/link";
-import ScrollLink from "../ScrollLink/ScrollLink";
-import ShootingStar from "../ShootingStars/ShootingStars";
+import ScrollLink from "../../ScrollLink/ScrollLink";
+import ShootingStar from "../../ShootingStars/ShootingStars";
 
 function Footer() {
     const currentYear = new Date().getFullYear();

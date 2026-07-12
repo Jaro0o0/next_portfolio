@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin , faReact , faPython , faTailwindCss , faGitAlt} from "@fortawesome/free-brands-svg-icons";
 
 import { faCode, faBook , faLocationCrosshairs,faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import { TextField } from "@mui/material";
 
 function Contact () {
     return ( 
@@ -45,10 +46,54 @@ function Contact () {
                 {/* Form_BOX */}
                 <div>
                     <form className="flex flex-col gap-5">
-                        <input placeholder="name" className="border border-[#171717] rounded-md p-4"/>
-                        <input placeholder="e-mail" className="border border-[#171717] rounded-md p-4"/>
-                        <textarea placeholder="text" className="border border-[#171717] rounded-md p-4"/>
-                        <button type="submit">Wyślj</button>
+                        <TextField
+                            fullWidth
+                            label="Name"
+                            placeholder="name"
+                            sx={{
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": { borderColor: "#171717" },
+                                    "&:hover fieldset": { borderColor: "#1771BF" },
+                                    "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                                },
+                                "& .MuiInputLabel-root": { color: "gray" },
+                                "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                                "& input": { color: "white" },
+                            }}
+                        />
+                        <TextField
+                            fullWidth
+                            label="E-mail"
+                            placeholder="e-mail"
+                            sx={{
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": { borderColor: "#171717" },
+                                    "&:hover fieldset": { borderColor: "#1771BF" },
+                                    "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                                },
+                                "& .MuiInputLabel-root": { color: "gray" },
+                                "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                                "& input": { color: "white" },
+                            }}
+                        />
+                        <TextField
+                            fullWidth
+                            label="Message"
+                            placeholder="text"
+                            multiline
+                            rows={4}
+                            sx={{
+                                "& .MuiOutlinedInput-root": {
+                                    "& fieldset": { borderColor: "#171717" },
+                                    "&:hover fieldset": { borderColor: "#1771BF" },
+                                    "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                                },
+                                "& .MuiInputLabel-root": { color: "gray" },
+                                "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                                "& textarea": { color: "white" },
+                            }}
+                        />
+                        <button type="submit">Wyślij</button>
                     </form>
                 </div>
                 </div>

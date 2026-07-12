@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faBook, faLocationCrosshairs, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { Code } from "../txt/code.jsx";
 import {codeData} from "../../../lib/codeData.js";
+import {TextField} from "@mui/material";
+
 import { motion } from "framer-motion";
 
 function About() {
@@ -23,15 +25,14 @@ function About() {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden px-4 py-[120px] sm:px-0">
+    <section id="about" className="relative  px-4 py-[200px] sm:px-0">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute top-0 left-0 z-0 overflow-visible opacity-10"
       >
-        <div className="w-[50vw] h-full">
+        <div className="w-[50vw] h-screen">
 <Code language="jsx" showCopyButton={false}>{
   codeData
-
 }</Code>
         </div>
       </div>
@@ -42,7 +43,7 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
           variants={containerVariants}
-          className="grid grid-cols-1 md:grid-cols-2 gap-16"
+          className="grid grid-cols-1 gap-16 md:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] md:gap-x-24"
         >
           {/* COL_ONE */}
           <div className="flex flex-col gap-6">
@@ -75,12 +76,15 @@ function About() {
 
             {/* TEXT_BOX */}
             <motion.p variants={itemVariants} className="text-zinc-400 text-lg leading-relaxed">
-              I am a Software Engineer passionate about creating efficient and user-friendly applications. I enjoy solving complex problems with clean, maintainable code and have experience in Python, JavaScript, and modern web technologies. I thrive in collaborative environments and value continuous learning.
+             Front-End focused Software Engineer specializing in React, TypeScript and Next.js for building user interfaces using
+              Material UI, Framer Motion and Tailwind CSS on the front end. I also have experience with Node.js (Express)
+               and Docker.
             </motion.p>
+        
           </div>
 
-          {/* COL_TWO */}
-          <div className="bg-[#111111] p-10 rounded-3xl border border-white/5">
+          {/* COL_Form */}
+          <div className="bg-[#111111] p-10 rounded-3xl border border-white/5 md:translate-x-8">
             <motion.div variants={itemVariants}>
               <h2 className="text-3xl font-bold text-white">Get in touch</h2>
               <p className="mt-2 text-gray-400">Have a project in mind? Send me a message.</p>
@@ -88,45 +92,79 @@ function About() {
 
             <form className="mt-8 flex flex-col gap-5">
               <motion.div variants={itemVariants}>
-                <label htmlFor="name" className="sr-only">Name</label>
-                <input
+                <TextField
+                  fullWidth
                   id="name"
                   name="name"
-                  type="text"
-                  required
+                  label="Name"
                   placeholder="Your name"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                  required
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "rgba(255,255,255,0.1)" },
+                      "&:hover fieldset": { borderColor: "#1771BF" },
+                      "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                      color: "white",
+                    },
+                    "& .MuiInputLabel-root": { color: "gray" },
+                    "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                    "& input": { color: "white" },
+                  }}
                 />
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label htmlFor="email" className="sr-only">Email address</label>
-                <input
+                <TextField
+                  fullWidth
                   id="email"
                   name="email"
                   type="email"
-                  required
+                  label="Email"
                   placeholder="Your email"
-                  className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                  required
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "rgba(255,255,255,0.1)" },
+                      "&:hover fieldset": { borderColor: "#1771BF" },
+                      "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                      color: "white",
+                    },
+                    "& .MuiInputLabel-root": { color: "gray" },
+                    "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                    "& input": { color: "white" },
+                  }}
                 />
               </motion.div>
 
               <motion.div variants={itemVariants}>
-                <label htmlFor="message" className="sr-only">Message</label>
-                <textarea
+                <TextField
+                  fullWidth
                   id="message"
                   name="message"
-                  required
-                  rows={4}
+                  label="Message"
                   placeholder="Tell me about your project"
-                  className="w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-white outline-none placeholder:text-gray-500 focus:border-[#1771BF]"
+                  required
+                  multiline
+                  rows={4}
+                  sx={{
+                    "& .MuiOutlinedInput-root": {
+                      "& fieldset": { borderColor: "rgba(255,255,255,0.1)" },
+                      "&:hover fieldset": { borderColor: "#1771BF" },
+                      "&.Mui-focused fieldset": { borderColor: "#1771BF" },
+                      color: "white",
+                    },
+                    "& .MuiInputLabel-root": { color: "gray" },
+                    "& .MuiInputLabel-root.Mui-focused": { color: "#1771BF" },
+                    "& textarea": { color: "white" },
+                  }}
                 />
               </motion.div>
 
               <motion.button
                 variants={itemVariants}
                 type="submit"
-                className="flex w-fit items-center gap-3 rounded-lg bg-[#1771BF] px-5 py-3 font-semibold text-white transition-colors hover:bg-[#2589df]"
+                 className=" text-black px-10 py-4 rounded-full font-semibold transition-all hover:scale-105 flex w-fit items-center gap-3 rounded-lg bg-[#1771BF] px-5 py-3 font-semibold text-white  hover:bg-[#2589df]" 
+                
               >
                 Send message
                 <FontAwesomeIcon icon={faPaperPlane} className="h-4 w-4" />

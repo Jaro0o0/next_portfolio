@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ScrollLink from "../ScrollLink/ScrollLink";
+import ScrollLink from "../../ScrollLink/ScrollLink";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
