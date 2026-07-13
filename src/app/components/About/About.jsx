@@ -111,7 +111,7 @@ function About() {
           </motion.div>
 
           <motion.p variants={itemVariants} className="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">
-            I&apos;m a Front-End focused Software Engineer specializing in React, TypeScript & Next.js — with hands-on experience in Node.js (Express) and Docker for full-stack projects. .
+            I&apos;m a Front-End focused Software Engineer specializing in React, TypeScript & Next.js — with hands-on experience in Node.js (Express) and Docker for full-stack projects. 
           </motion.p>
           
 

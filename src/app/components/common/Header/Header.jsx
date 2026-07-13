@@ -37,17 +37,22 @@ const Header = () => {
 
         {/* NAVIGATION */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+          <li>
+            <ScrollLink href={isHomePage ? "/#home" : "/"} className="hover:text-white transition-colors">Home</ScrollLink>
+          </li>
+          {isHomePage && (
+            <li>
+              <ScrollLink href="/#technologies" className="hover:text-white transition-colors">Technologies</ScrollLink>
+            </li>
+          )}
+          <li>
+            <ScrollLink href="/#contact" className="hover:text-white transition-colors">Contact</ScrollLink>
+          </li>
           {isHomePage && (
             <li>
               <ScrollLink href="/#work" className="hover:text-white transition-colors">Work</ScrollLink>
             </li>
           )}
-          <li>
-            <ScrollLink href={isHomePage ? "/#home" : "/"} className="hover:text-white transition-colors">Home</ScrollLink>
-          </li>
-          <li>
-            <ScrollLink href="/#contact" className="hover:text-white transition-colors">Contact</ScrollLink>
-          </li>
         </ul>
 
         {/* SOCIALS & ACTIONS */}
@@ -95,22 +100,23 @@ const Header = () => {
           className="fixed inset-0 w-full h-screen bg-[#121212]/95 backdrop-blur-xl z-[40] flex flex-col items-center justify-center"
         >
           <ul className="flex flex-col items-center gap-10 text-3xl font-bold tracking-tight text-gray-400">
-            {isHomePage && (
-              <motion.li 
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-              >
-                <ScrollLink href="/#work" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Work</ScrollLink>
-              </motion.li>
-            )}
+            {/* Home */}
+            <motion.li 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1 }}
+            >
+              <ScrollLink href={isHomePage ? "/#home" : "/"} onClick={() => setOpen(false)} className="hover:text-white transition-colors">Home</ScrollLink>
+            </motion.li>
+            {/* Technologies */}
             <motion.li 
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <ScrollLink href={isHomePage ? "/#home" : "/"} onClick={() => setOpen(false)} className="hover:text-white transition-colors">Home</ScrollLink>
+              <ScrollLink href="/#technologies" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Technologies</ScrollLink>
             </motion.li>
+
             <motion.li 
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -118,13 +124,15 @@ const Header = () => {
             >
               <ScrollLink href="/#contact" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Contact</ScrollLink>
             </motion.li>
-            <motion.li 
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-            >
-              <ScrollLink href="/#technologies" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Technologies</ScrollLink>
-            </motion.li>
+            {isHomePage && (
+              <motion.li
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <ScrollLink href="/#work" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Work</ScrollLink>
+              </motion.li>
+            )}
           </ul>
         </motion.div>
       )}

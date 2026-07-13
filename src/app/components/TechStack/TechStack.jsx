@@ -30,7 +30,7 @@ const techItems = [
 
 function TechStack() {
   return (
-    <section className="py-24 px-4 sm:px-0 relative overflow-hidden">
+    <section id="technologies" className="py-24 px-4 sm:px-0 relative overflow-hidden">
      
       
 
