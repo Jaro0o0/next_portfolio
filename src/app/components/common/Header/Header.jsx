@@ -118,6 +118,13 @@ const Header = () => {
             >
               <ScrollLink href="/#contact" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Contact</ScrollLink>
             </motion.li>
+            <motion.li 
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3 }}
+            >
+              <ScrollLink href="/#technologies" onClick={() => setOpen(false)} className="hover:text-white transition-colors">Technologies</ScrollLink>
+            </motion.li>
           </ul>
         </motion.div>
       )}

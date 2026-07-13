@@ -6,7 +6,7 @@ function Footer() {
     const currentYear = new Date().getFullYear();
 
     return ( 
-        <footer className="pt-24 pb-12 px-4 sm:px-6" id='contact'>
+        <footer className="pt-24 pb-12 px-4 sm:px-6" >
             <div className="container mx-auto max-w-7xl">
                 {/* CTA_SECTION */}
                 <div className="relative overflow-hidden bg-[#111111] border border-white/5 rounded-3xl p-8 md:p-16 mb-16 text-center">
@@ -19,12 +19,12 @@ function Footer() {
                             I'm currently available for work. 
                             Have a project in mind? Let's talk!
                         </p>
-                        {/* <Link 
+                        <Link 
                             href="mailto:jar0dev80@gmail.com"
                             className="inline-block bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-zinc-200 transition-all hover:scale-105"
                         >
                             Send an email
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
 

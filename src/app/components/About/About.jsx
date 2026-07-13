@@ -78,7 +78,7 @@ function About() {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32">
+    <section id='contact' className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32">
       <Toaster position="top-right" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -left-36 top-10 h-80 w-80 rounded-full bg-[#1771BF]/15 blur-[120px]" />
@@ -127,11 +127,11 @@ function About() {
             ))}
           </motion.ul>
 
-          <motion.div variants={itemVariants} className="mt-10 border-t border-white/8 pt-6">
+          {/* <motion.div variants={itemVariants} className="mt-10 border-t border-white/8 pt-6">
             <p className="text-sm leading-7 text-zinc-500">
               Also working with Material UI, Framer Motion, Tailwind CSS, Node.js, Express and Docker.
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
 
         <div className="relative border-t border-white/10 bg-white/[0.025] p-7 sm:p-10 lg:border-t-0 lg:p-14">

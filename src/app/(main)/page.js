@@ -13,12 +13,13 @@ function Home() {
       <Section>
         <TechStack/>
       </Section>
+       <Section>
+        <About/>
+      </Section>
       <Section>
           <Portfolio/>
       </Section>
-      <Section>
-        <About/>
-      </Section>
+     
     </>
   );
 }
