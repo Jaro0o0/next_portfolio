@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import { TextField } from "@mui/material";
 
 import { Code } from "../txt/code.jsx";
-import { codeData } from "../../../lib/codeData.js";
+import { codeData } from "@/lib/codeData.js";
 
 
 //FORMS
@@ -154,7 +154,7 @@ function About() {
             <motion.button
               variants={itemVariants}
               type="submit"
-              className="mt-1 flex w-full items-center justify-center gap-3 rounded-xl bg-[#1771BF] px-5 py-4 font-semibold text-white shadow-lg shadow-[#1771BF]/20 transition hover:-translate-y-0.5 hover:bg-[#2589df] hover:shadow-[#1771BF]/35 focus:outline-none focus:ring-2 focus:ring-[#4ba3ee] focus:ring-offset-2 focus:ring-offset-[#0d0d0f] sm:w-fit"
+              className="mt-1 flex w-full items-center justify-center gap-3 rounded-xl bg-[#1771BF] px-5 py-4 font-semibold text-white shadow-lg shadow-[#1771BF]/20   hover:bg-[#2589df] hover:shadow-[#1771BF]/35 focus:outline-none focus:ring-2 focus:ring-[#4ba3ee] focus:ring-offset-2 focus:ring-offset-[#0d0d0f] sm:w-fit"
             >
               Send message
               <FontAwesomeIcon icon={faPaperPlane} className="h-4 w-4" />

@@ -1,5 +1,5 @@
-import BackButton from "@/app/components/BackButton/BackButton";
-import Countdown from "@/app/components/ComingSoon/Countdown";
+import BackButton from "@/components/BackButton/BackButton";
+import Countdown from "@/components/ComingSoon/Countdown";
 import { timers } from "../data";
 import Link from "next/link";
 

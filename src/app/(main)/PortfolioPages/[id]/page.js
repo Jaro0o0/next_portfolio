@@ -7,7 +7,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
 import { items } from "../data";
-import BackButton from "@/app/components/BackButton/BackButton";
+import BackButton from "@/components/BackButton/BackButton";
 
 function ProjectPage() {
   const { id } = useParams();

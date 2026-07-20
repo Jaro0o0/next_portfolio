@@ -83,7 +83,7 @@ function Portfolio() {
                 hidden: { opacity: 0, y: 30 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
-              className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10 transition-all duration-300"
+              className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10  "
             >
               {/* IMAGE_BOX */}
               <div className="aspect-[16/10] overflow-hidden relative">

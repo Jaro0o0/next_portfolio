@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faPython, faTailwindCss, faJs, faTypescript, faCss3Alt, faDocker, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { faRoute } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import techStackAnimations from "@/animations/techStackAnimations";
 
 const techItems = [
   { name: "Next.js", description: "Framework", src: "/icons/next.svg", bgColor: "bg-white/10", borderColor: "hover:border-white/50", className: "invert brightness-200", shadowColor: "group-hover:shadow-white/10" },
@@ -37,8 +38,8 @@ function TechStack() {
       <div className="container mx-auto max-w-7xl relative z-10">
         {/* TEXT_BOX */}
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 text-center sm:text-left"
@@ -55,32 +56,23 @@ function TechStack() {
         <motion.div 
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: { opacity: 0 },
-            show: {
-              opacity: 1,
-              transition: { staggerChildren: 0.05 }
-            }
-          }}
+          viewport={{ once: true, amount: 0.15 }}
+          variants={techStackAnimations.container}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-4"
         >
-          {techItems.map((item, index) => (
+          {techItems.map((item) => (
             <motion.div 
-              key={index} 
-              variants={{
-                hidden: { opacity: 0, scale: 0.9, y: 10 },
-                show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.4 } }
-              }}
-              whileHover={{ y: -5 }}
-              className={`relative p-5 flex flex-col gap-4 bg-[#121212]/50 backdrop-blur-sm rounded-2xl border border-white/5 ${item.borderColor} ${item.shadowColor} transition-all duration-500 group cursor-default shadow-lg hover:bg-[#181818]/80`}
+              key={item.name} 
+              variants={techStackAnimations.item}
+              whileHover={{ y: -5, scale: 1.01 }}
+              className={`relative p-5 flex flex-col gap-4 bg-[#121212]/50 backdrop-blur-sm rounded-2xl border border-white/5 ${item.borderColor} ${item.shadowColor} transition-[background-color,border-color,box-shadow] duration-500 group cursor-default shadow-lg hover:bg-[#181818]/80`}
             >
               {/* Background Glow Effect */}
               <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl blur-2xl -z-10 ${item.bgColor} scale-75`} />
 
               <div className="flex items-start justify-between">
                 {/* ICON_BOX */}
-                <div className={`w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center group-hover:scale-110 transition-transform duration-500 ease-out shadow-inner flex-shrink-0`}>
+                <div className={`w-12 h-12 rounded-xl ${item.bgColor} flex items-center justify-center shadow-inner flex-shrink-0`}>
                   {item.icon ? (
                     <FontAwesomeIcon icon={item.icon} className={`w-8 h-8 ${item.color}`} />
                   ) : (

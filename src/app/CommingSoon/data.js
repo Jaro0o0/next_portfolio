@@ -12,6 +12,6 @@ export const timers =  [
     },
     {
         slug:'all-work',
-        time:'2026-07-20T00:00:00'
+        time:'2026-08-20T00:00:00'
     }
 ]
