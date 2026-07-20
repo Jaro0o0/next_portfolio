@@ -78,7 +78,7 @@ const Header = () => {
           
           <Link 
             href="mailto:jar0dev80@gmail.com" 
-            className="hidden sm:block text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-[#1771BF] hover:text-white transition-all"
+            className="hidden sm:block text-xs font-bold uppercase tracking-wider bg-white text-black px-4 py-2 rounded-full hover:bg-[#1771BF] hover:text-white transition-all duration-300"
           >
             Hire Me
           </Link>

@@ -1,3 +1,5 @@
+
+
 import Link from "next/link";
 import ScrollLink from "../../ScrollLink/ScrollLink";
 import ShootingStar from "../../ShootingStars/ShootingStars";
@@ -21,7 +23,7 @@ function Footer() {
                         </p>
                         <Link 
                             href="mailto:jar0dev80@gmail.com"
-                            className="inline-block bg-white text-black px-10 py-4 rounded-full font-semibold hover:bg-zinc-200 transition-all hover:scale-105"
+                            className="inline-flex h-14 items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 "
                         >
                             Send an email
                         </Link>

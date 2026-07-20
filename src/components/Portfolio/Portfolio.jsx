@@ -28,7 +28,7 @@ const projects = [
   {
     title: "Real Time Chat",
     image: "/portfolio-imgs/chat-laptop.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker'],
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite'],
     link: "/PortfolioPages/real-time-chat",
   },
 
@@ -52,8 +52,9 @@ function Portfolio() {
           </div>
 
           <Link 
-            href="/CommingSoon/all-work" 
-            className="group bg-white text-black py-3 px-8 rounded-full flex items-center gap-3 font-medium hover:bg-zinc-200 transition-all"
+            // href="/CommingSoon/all-work" 
+            href='/all-work'
+            className="group bg-white text-black py-3 px-8 rounded-full flex items-center gap-3 font-medium hover:bg-zinc-200 transition-all duration-300"
           >
             All Work
             <FontAwesomeIcon icon={faArrowRightLong} className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -117,7 +118,7 @@ function Portfolio() {
                   {/* ACTION_BTN */}
                   <Link 
                     href={project.link} 
-                    className="w-14 h-14 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn"
+                    className="w-14 h-14 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn duration-300"
                     aria-label={`View ${project.title} project`}
                   >
                     <FontAwesomeIcon 

@@ -73,7 +73,7 @@ export const items = [
         title: 'Real Time Chat',
         subtitle: 'Real-time chat web application ',
         img: "/portfolio-imgs/chat.png",
-        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker',],
+        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite'],
         code: "https://github.com/Jaro0o0/realtime_chat",
         demo: "https://realtime-chat-seven-nu.vercel.app/",
         desc: 'Real-time chat web application built with React and TypeScript on the front end, and a backend using Node.js with the Express framework and the Socket.io library to provide real-time connections. Docker was used for backend deployment',
