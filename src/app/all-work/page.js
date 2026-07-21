@@ -32,7 +32,7 @@ function Page() {
         <>
      <Header/>
       {/* BACK BUTTON */}
-      <BackButton className="hidden md:block"  linkTo={'/all-work'}/>
+      <BackButton className="hidden md:block"  linkTo={'/#work'}/>
         <div className="min-h-screen w-full  mt-8  px-4 py-24 sm:px-6">
             <div className="container mx-auto max-w-7xl">
                 <div className='flex flex-col justify-center gap-4 mb-5 fle md:flex-row'>
