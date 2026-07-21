@@ -9,6 +9,9 @@ import { useParams, useSearchParams } from "next/navigation";
 import { items } from "../../../lib/portfolioPagesData";
 import BackButton from "@/components/common/BackButton/BackButton";
 
+import Header from "@/components/common/Header/Header";
+import Footer from "@/components/common/Footer/Footer";
+
 function ProjectPage() {
   const { id } = useParams();
   const searchParams = useSearchParams();
@@ -45,6 +48,8 @@ function ProjectPage() {
   };
 
   return (
+    <>
+    <Header/>
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
       {/* Back_BUTTON_LOGIC */}
@@ -134,6 +139,8 @@ function ProjectPage() {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }
 

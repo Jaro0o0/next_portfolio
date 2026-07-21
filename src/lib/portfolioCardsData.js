@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Real Time Chat",
     image: "/portfolio-imgs/chat-laptop.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite'],
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite',"React Router",],
     link: "/portfolio-pages/real-time-chat",
   },
 {
