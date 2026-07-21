@@ -117,7 +117,7 @@ function Portfolio() {
 
                   {/* ACTION_BTN */}
                   <Link 
-                    href={project.link} 
+                    href={`${project.link}?from=home`} 
                     className="w-14 h-14 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn duration-300"
                     aria-label={`View ${project.title} project`}
                   >

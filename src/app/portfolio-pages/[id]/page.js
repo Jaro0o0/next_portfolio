@@ -5,12 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { items } from "../../../lib/portfolioPagesData";
 import BackButton from "@/components/common/BackButton/BackButton";
 
 function ProjectPage() {
-  const { id , category, slug } = useParams();
+  const { id } = useParams();
+  const searchParams = useSearchParams();
+  const from = searchParams?.get("from");
+  const backLink = from === "all-work" ? "/all-work" : "/#work";
   const project = items.find((item) => item.slug === id);
 
   if (!project) {
@@ -45,11 +48,7 @@ function ProjectPage() {
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
       {/* Back_BUTTON_LOGIC */}
-      {category === 'portfolio-pages' ? (
-        <BackButton className="hidden md:block" linkTo={'/all-work'} />
-      ) : (
-        <BackButton className="hidden md:block" linkTo={'/#work'} />
-      )}
+      <BackButton className="hidden md:block" linkTo={backLink} />
       
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
