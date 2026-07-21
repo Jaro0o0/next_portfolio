@@ -84,7 +84,7 @@ function Portfolio() {
                 hidden: { opacity: 0, y: 30 },
                 show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
               }}
-              className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10  "
+              className="group flex h-full flex-col bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10"
             >
               {/* IMAGE_BOX */}
               <div className="aspect-[16/10] overflow-hidden relative">
@@ -97,8 +97,8 @@ function Portfolio() {
               </div>
 
               {/* CONTENT_BOX */}
-              <div className="p-6">
-                <div className="flex justify-between items-end gap-4">
+              <div className="flex flex-1 p-6">
+                <div className="flex h-full w-full justify-between items-end gap-4">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-white mb-4">{project.title}</h3>
 
@@ -118,7 +118,7 @@ function Portfolio() {
                   {/* ACTION_BTN */}
                   <Link 
                     href={`${project.link}?from=home`} 
-                    className="w-14 h-14 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn duration-300"
+                    className="w-14 h-14 shrink-0 bg-sky-600 hover:bg-sky-500 text-white rounded-xl flex items-center justify-center transition-colors group/btn duration-300"
                     aria-label={`View ${project.title} project`}
                   >
                     <FontAwesomeIcon 
