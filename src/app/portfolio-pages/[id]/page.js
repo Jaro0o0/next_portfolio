@@ -6,8 +6,8 @@ import { faArrowDown, faCode, faGlobe } from "@fortawesome/free-solid-svg-icons"
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useParams } from "next/navigation";
-import { items } from "../data";
-import BackButton from "@/components/BackButton/BackButton";
+import { items } from "../../../lib/portfolioPagesData";
+import BackButton from "@/components/common/BackButton/BackButton";
 
 function ProjectPage() {
   const { id } = useParams();

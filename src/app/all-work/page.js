@@ -5,9 +5,13 @@ import { projects } from '@/lib/portfolioCardsData'
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import BackButton from '@/components/common/BackButton/BackButton';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
+
+
+import allWorkAnimations from '@/animations/allWorkAnimations';
 
 function Page() {
 
@@ -22,27 +26,34 @@ function Page() {
 
     return (  
         <>
+            {/* BACK BUTTON */}
+      <BackButton className="hidden md:block" />
         <div className="min-h-screen w-full px-4 py-24 sm:px-6">
             <div className="container mx-auto max-w-7xl">
-                <div className='flex justify-center gap-4 mb-2'>
-                    <button onClick={() => setFilterValue('all')}>All</button>
-                    <button onClick={ ()=>setFilterValue('comercial') }>Comercial</button>
-                    <button onClick={ ()=>setFilterValue('finished')} >Finished</button>
-                    <button onClick={ ()=>setFilterValue('soon')}>Comming Soon</button>
+                <div className='flex justify-center gap-4 mb-5'>
+                    <button onClick={() => setFilterValue('all')} className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 p-4'>All</button>
+                    <button onClick={ ()=>setFilterValue('comercial') } className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Comercial</button>
+                    <button onClick={ ()=>setFilterValue('finished')}  className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Finished</button>
+                    <button onClick={ ()=>setFilterValue('soon')} className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Comming Soon</button>
                     
                     
                     
                 </div>
                 {/* CARD_GRID */}
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.15 }}
+                
+                variants={allWorkAnimations.container}
+
+                >
                     {/* CARDS */}
                     {filteredProjects.map((project, index) => (
                         <motion.div 
                         key={index} 
-                        variants={{
-                            hidden: { opacity: 0, y: 30 },
-                            show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
-                        }}
+                        variants={allWorkAnimations.item}
+                     
                         className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10  "
                         >
                         {/* IMAGE_BOX */}
@@ -93,7 +104,7 @@ function Page() {
 
                     
 
-                </div>
+                </motion.div>
 
             </div>
         </div>

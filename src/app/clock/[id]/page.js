@@ -1,6 +1,8 @@
-import BackButton from "@/components/BackButton/BackButton";
+
+
+import BackButton from "@/components/common/BackButton/BackButton";
 import Countdown from "@/components/ComingSoon/Countdown";
-import { timers } from "../data";
+import { timers } from "@/lib/clockData";
 import Link from "next/link";
 
 export default  async function CommingSoon( { params }) {

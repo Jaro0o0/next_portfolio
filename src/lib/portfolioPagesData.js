@@ -47,13 +47,36 @@ export const items = [
     },
     {
         //Task
-        slug: 'task_manager',
+        slug: 'task-manager',
         title: 'Real Time Chat',
         subtitle: 'Real-time chat web application ',
-        img: "/portfolio-imgs/chat.png",
-        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite'],
+        img: "/portfolio-imgs/task-menger.png",
+        tech: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL'],
         code: "https://github.com/Jaro0o0/realtime_chat",
-        demo: "https://realtime-chat-seven-nu.vercel.app/",
+        demo: "/clock/task-manager",
         desc: 'Real-time chat web application built with React and TypeScript on the front end, and a backend using Node.js with the Express framework and the Socket.io library to provide real-time connections. Docker was used for backend deployment',
     },
+    {
+        //Aniversary
+        slug: 'aniversary',
+        title: 'Anniversary',
+        subtitle: 'Gallery web application ',
+        img: "/portfolio-imgs/aniversary.png",
+        tech: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL'],
+        code: "https://github.com/Jaro0o0/aniversary",
+        demo: "https://www.jaropatrycja.online/",
+        desc: 'Created as a special anniversary gift for my girlfriend, this web application is an interactive photo gallery showcasing our favorite memories together from 2024 to 2026.',
+    },
+    {
+        //Portfolio
+        slug: 'portfolio',
+        title: 'Portfolio Website',
+        subtitle: 'Gallery web application ',
+        img: "/portfolio-imgs/portfolio.png",
+        tech: ["Next.js", 'JavaScript', 'Tailwind CSS','Framer Motion', 'Material UI','React Hook Form','Email.js'],
+        code: "https://github.com/Jaro0o0/aniversary",
+        demo: "https://www.jaropatrycja.online/",
+        desc: 'This project is a personal website, where you actually are now,  was built with Next.js elements of Material UI, Framer Motion and JavaScript ',
+    },
+ 
 ]
