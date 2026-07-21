@@ -14,6 +14,7 @@ const BackButton = ({ className = "", linkTo}) => {
     >
       <Link 
         href={linkTo} 
+        scroll={true}
         className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"
       >
         <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#1771BF] transition-all text-sm">

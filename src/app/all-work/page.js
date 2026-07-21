@@ -4,7 +4,7 @@
 import Header from '@/components/common/Header/Header'; 
 import Footer from '@/components/common/Footer/Footer';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { projects } from '@/lib/portfolioCardsData'
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -19,8 +19,11 @@ import allWorkAnimations from '@/animations/allWorkAnimations';
 
 function Page() {
 
-
     const [filterValue,setFilterValue] = useState('all');
+
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+    }, []);
 
 
     const filteredProjects = filterValue === 'all'
@@ -47,8 +50,7 @@ function Page() {
                 {/* CARD_GRID */}
                 <motion.div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
                 initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.15 }}
+                animate="show"
                 key={filterValue}
                 variants={allWorkAnimations.container}
 
