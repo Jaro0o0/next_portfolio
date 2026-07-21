@@ -40,7 +40,7 @@ function ProjectPage() {
   return (
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
-      <BackButton className="hidden md:block" />
+      <BackButton className="hidden md:block" linkTo={'/#work'} />
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}

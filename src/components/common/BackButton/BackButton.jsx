@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
-const BackButton = ({ className = "" }) => {
+const BackButton = ({ className = "", linkTo}) => {
   return (
     <motion.div 
       initial={false}
@@ -13,7 +13,7 @@ const BackButton = ({ className = "" }) => {
       className={`fixed top-28 left-10 z-[60] ${className}`}
     >
       <Link 
-        href="/#work" 
+        href={linkTo} 
         className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors group"
       >
         <div className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#1771BF] transition-all text-sm">

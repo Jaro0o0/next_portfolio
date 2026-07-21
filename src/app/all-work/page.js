@@ -1,5 +1,9 @@
 'use client'
 
+
+import Header from '@/components/common/Header/Header'; 
+import Footer from '@/components/common/Footer/Footer';
+
 import { useState } from 'react';
 import { projects } from '@/lib/portfolioCardsData'
 import { motion } from "framer-motion";
@@ -26,15 +30,16 @@ function Page() {
 
     return (  
         <>
-            {/* BACK BUTTON */}
-      <BackButton className="hidden md:block" />
-        <div className="min-h-screen w-full px-4 py-24 sm:px-6">
+     <Header/>
+      {/* BACK BUTTON */}
+      <BackButton className="hidden md:block"  linkTo={'/all-work'}/>
+        <div className="min-h-screen w-full  mt-8  px-4 py-24 sm:px-6">
             <div className="container mx-auto max-w-7xl">
-                <div className='flex justify-center gap-4 mb-5'>
+                <div className='flex flex-col justify-center gap-4 mb-5 fle md:flex-row'>
                     <button onClick={() => setFilterValue('all')} className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 p-4'>All</button>
-                    <button onClick={ ()=>setFilterValue('comercial') } className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Comercial</button>
-                    <button onClick={ ()=>setFilterValue('finished')}  className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Finished</button>
-                    <button onClick={ ()=>setFilterValue('soon')} className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300'>Comming Soon</button>
+                    <button onClick={ ()=>setFilterValue('comercial') } className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 p-4'>Comercial</button>
+                    <button onClick={ ()=>setFilterValue('finished')}  className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 p-4'>Finished</button>
+                    <button onClick={ ()=>setFilterValue('soon')} className='inline-flex items-center justify-center rounded-full bg-white px-10 font-semibold leading-none text-black shadow-lg hover:bg shadow-white/10 hover:bg-[#1771BF]   hover:text-white transition-all duration-300 p-4'>Comming Soon</button>
                     
                     
                     
@@ -44,14 +49,14 @@ function Page() {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: true, amount: 0.15 }}
-                
+                key={filterValue}
                 variants={allWorkAnimations.container}
 
                 >
                     {/* CARDS */}
-                    {filteredProjects.map((project, index) => (
+                    {filteredProjects.map((project) => (
                         <motion.div 
-                        key={index} 
+                        key={project.link} 
                         variants={allWorkAnimations.item}
                      
                         className="group bg-[#111111] border border-white/5 rounded-2xl overflow-hidden hover:border-white/10  "
@@ -108,6 +113,7 @@ function Page() {
 
             </div>
         </div>
+        <Footer/>
         </>
     );
 }
