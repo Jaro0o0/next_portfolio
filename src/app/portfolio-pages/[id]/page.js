@@ -10,7 +10,7 @@ import { items } from "../../../lib/portfolioPagesData";
 import BackButton from "@/components/common/BackButton/BackButton";
 
 function ProjectPage() {
-  const { id } = useParams();
+  const { id , category, slug } = useParams();
   const project = items.find((item) => item.slug === id);
 
   if (!project) {
@@ -21,6 +21,10 @@ function ProjectPage() {
       </div>
     );
   }
+
+  
+
+
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +44,13 @@ function ProjectPage() {
   return (
     <div className="bg-[#050505] min-h-screen text-white">
       {/* BACK BUTTON */}
-      <BackButton className="hidden md:block" linkTo={'/#work'} />
+      {/* Back_BUTTON_LOGIC */}
+      {category === 'portfolio-pages' ? (
+        <BackButton className="hidden md:block" linkTo={'/all-work'} />
+      ) : (
+        <BackButton className="hidden md:block" linkTo={'/#work'} />
+      )}
+      
 
       <section className="h-screen w-full relative flex items-center justify-center overflow-hidden">
         {/* GRID_BACKGROUND */}
