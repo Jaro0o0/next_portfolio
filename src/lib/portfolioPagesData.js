@@ -74,8 +74,8 @@ export const items = [
         subtitle: 'my portfolio website ',
         img: "/portfolio-imgs/portfolio.png",
         tech: ["Next.js", 'JavaScript', 'Tailwind CSS','Framer Motion', 'Material UI','React Hook Form','Email.js'],
-        code: "https://github.com/Jaro0o0/aniversary",
-        demo: "https://www.jaropatrycja.online/",
+        code: "https://github.com/Jaro0o0/next_portfolio",
+        demo: "/",
         desc: 'This project is a personal website, where you actually are now,  was built with Next.js elements of Material UI, Framer Motion and JavaScript ',
     },
  
