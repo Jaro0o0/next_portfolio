@@ -71,7 +71,7 @@ export const items = [
         //Portfolio
         slug: 'portfolio',
         title: 'Portfolio Website',
-        subtitle: 'Gallery web application ',
+        subtitle: 'my portfolio website ',
         img: "/portfolio-imgs/portfolio.png",
         tech: ["Next.js", 'JavaScript', 'Tailwind CSS','Framer Motion', 'Material UI','React Hook Form','Email.js'],
         code: "https://github.com/Jaro0o0/aniversary",
