@@ -28,9 +28,9 @@ export const projects = [
   },
 {
     title: "Task Menager",
-    image: "/portfolio-imgs/chat-laptop.png",
+    image: "/portfolio-imgs/task-menger-laptop.png",
     tags: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL'],
-    link: "/PortfolioPages/real-time-chat",
+    link: "/PortfolioPages/task-manager",
     cat: 'soon',
   },
   {
@@ -49,10 +49,17 @@ export const projects = [
   },
   {
     title: "Portfolio",
-    image: "/portfolio-imgs/algorithms_visualizer-laptop.png",
+    image: "/portfolio-imgs/portfolio-laptop.png",
     tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Framer Motion',],
-    link: "/PortfolioPages/aniversary-laptop.png",
+    link: "/PortfolioPages/portfolio-laptop.png",
     cat: 'finished',
+  },
+  {
+    title: "Book Tracker",
+    image: "/portfolio-imgs/books-laptop.png",
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Framer Motion',],
+    link: "/PortfolioPages/portfolio-laptop.png",
+    cat: 'soon',
   },
 
 ];

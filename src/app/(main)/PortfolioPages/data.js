@@ -34,42 +34,20 @@ export const items = [
         demo: "https://crypto-forge-omega.vercel.app",
         desc: 'Crypto Forge is a cryptocurrency exchange website that displays live crypto prices, giving users an up-to-date view of the current market. Built with Next.js, the application handles API requests on the server side to securely fetch pricing data and deliver it to the client. A Three.js 3D model is integrated into the interface with lazy loading, so the visual element loads only when needed and keeps the initial page performance fast.',
     },
-        // {
-    //     //Fitness
-    //     slug: 'fitness-website',
-    //     title: 'Fitness Website',
-    //     subtitle: 'Simple gym website built in Vite with custom router',
-    //     img: "/portfolio-imgs/FitnessLaptop.png",
-    //     tech: ["Vite", "Swiper.js", 'JavaScript', 'Tailwind CSS'],
-    //     code: "https://github.com/Jaro0o0/FitnessWebsite",
-    //     demo: "https://fitness-gym-five-weld.vercel.app/",
-    //     desc: 'This project is a modern gym website built with Vite, JavaScript, and Tailwind CSS, designed to showcase fitness offerings through a clean and dynamic interface. It leverages Swiper.js to deliver smooth, interactive carousels and seamless content navigation ensuring a fast, visually engaging, and fully responsive experience across all devices.',
-    // },
-    // {
-    //     //Pokemon
-    //     slug: 'pokestore',
-    //     title: 'PokéStore',
-    //     subtitle: 'Full-stack e-commerce platform for buying Pokémon cards',
-    //     img: "/portfolio-imgs/FallPokemonLaptopp.png",
-    //     tech: ["React", "React Redux", 'React Router', 'React Hook Form', 'Django', 'Django Rest Framework'],
-    //     code: '/CommingSoon/pokemon',
-    //     demo: '/CommingSoon/pokemon',
-    //     desc: 'This project  is Full-stack e-commerce platform for buying Pokémon cards. Django REST Framework backend delivers a REST API handling user authentication, product management, and order processing. React frontend with Redux for global state management of the shopping cart .'
-    // },
-    // {
-    //     //Feynman
-    //     slug: 'feynman-bot',
-    //     title: 'Feynman Bot',
-    //     subtitle: 'AI-powered Discord learning bot built with Node.js & Gemini API',
-    //     img: "/portfolio-imgs/FallBotLaptop.png",
-    //     tech: ["Node.js", "Discord.js", 'Gemini AI'],
-    //     code: "/CommingSoon/bot",
-    //     demo: "/CommingSoon/bot",
-    //     desc: 'This project is a modern Discord learning bot built with Node.js, designed to help users master any topic through the Feynman Technique. It leverages the Discord.js library for seamless bot integration and the Gemini API to provide AI-powered answer validation and intelligent feedback. The bot guides users through explaining concepts in simple terms, identifying knowledge gaps, and reinforcing understanding making self-study more effective and engaging.'
-    // },
-     {
+    {
         //CHAT
         slug: 'real-time-chat',
+        title: 'Real Time Chat',
+        subtitle: 'Real-time chat web application ',
+        img: "/portfolio-imgs/chat.png",
+        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite'],
+        code: "https://github.com/Jaro0o0/realtime_chat",
+        demo: "https://realtime-chat-seven-nu.vercel.app/",
+        desc: 'Real-time chat web application built with React and TypeScript on the front end, and a backend using Node.js with the Express framework and the Socket.io library to provide real-time connections. Docker was used for backend deployment',
+    },
+    {
+        //Task
+        slug: 'task_manager',
         title: 'Real Time Chat',
         subtitle: 'Real-time chat web application ',
         img: "/portfolio-imgs/chat.png",

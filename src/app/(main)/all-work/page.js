@@ -9,16 +9,15 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
-function page() {
+function Page() {
 
 
     const [filterValue,setFilterValue] = useState('all');
 
 
-    const filterItemsHandler = () => {
-
-        const filteredItems = filterValue === 'all' ?  projects :  project.filter( (item) => item.cat === filterValue )
-    }
+    const filteredProjects = filterValue === 'all'
+        ? projects
+        : projects.filter((item) => item.cat === filterValue);
 
 
     return (  
@@ -26,9 +25,10 @@ function page() {
         <div className="min-h-screen w-full px-4 py-24 sm:px-6">
             <div className="container mx-auto max-w-7xl">
                 <div className='flex justify-center gap-4 mb-2'>
-                    <button>Comercial</button>
-                    <button>Finished</button>
-                    <button>Comming Soon</button>
+                    <button onClick={() => setFilterValue('all')}>All</button>
+                    <button onClick={ ()=>setFilterValue('comercial') }>Comercial</button>
+                    <button onClick={ ()=>setFilterValue('finished')} >Finished</button>
+                    <button onClick={ ()=>setFilterValue('soon')}>Comming Soon</button>
                     
                     
                     
@@ -36,7 +36,7 @@ function page() {
                 {/* CARD_GRID */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                     {/* CARDS */}
-                    {projects.map((project, index) => (
+                    {filteredProjects.map((project, index) => (
                         <motion.div 
                         key={index} 
                         variants={{
@@ -101,4 +101,4 @@ function page() {
     );
 }
 
-export default page;
+export default Page;
