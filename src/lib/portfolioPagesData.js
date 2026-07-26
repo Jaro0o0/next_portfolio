@@ -51,7 +51,7 @@ export const items = [
         title: 'Real Time Chat',
         subtitle: 'Real-time chat web application ',
         img: "/portfolio-imgs/task-menger.png",
-        tech: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL',],
+        tech: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL','Docker',],
         code: "https://github.com/Jaro0o0/realtime_chat",
         demo: "/clock/task-manager",
         desc: 'Real-time chat web application built with React and TypeScript on the front end, and a backend using Node.js with the Express framework and the Socket.io library to provide real-time connections. Docker was used for backend deployment',

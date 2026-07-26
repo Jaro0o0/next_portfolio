@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { containerVariants, itemVariants } from "../Hero/Hero";
+import { containerVariants, itemVariants } from "../Home/Hero/Hero";
 
 const TimeUnit = ({ value, label }) => (
     <div className="flex flex-col items-center">
