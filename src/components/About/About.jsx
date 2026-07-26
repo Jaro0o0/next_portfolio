@@ -78,11 +78,10 @@ function About() {
   };
 
   return (
-    <section id='contact' className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32">
+    <section id='contact' className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32  [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)]">
       <Toaster position="top-right" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-36 top-10 h-80 w-80 rounded-full bg-[#1771BF]/15 blur-[120px]" />
-        <div className="absolute -right-36 bottom-0 h-96 w-96 rounded-full bg-sky-400/10 blur-[140px]" />
+        <div className="absolute -left-36 top-10 h-100 w-100 rounded-full bg-[#1771BF]/15 blur-[120px]" />
         <div className="absolute -left-12 top-0 hidden w-[38rem] opacity-[0.07] lg:block">
           <Code language="jsx" showCopyButton={false}>{codeData}</Code>
         </div>
@@ -127,11 +126,6 @@ function About() {
             ))}
           </motion.ul>
 
-          {/* <motion.div variants={itemVariants} className="mt-10 border-t border-white/8 pt-6">
-            <p className="text-sm leading-7 text-zinc-500">
-              Also working with Material UI, Framer Motion, Tailwind CSS, Node.js, Express and Docker.
-            </p>
-          </motion.div> */}
         </div>
 
         <div className="relative border-t border-white/10 bg-white/[0.025] p-7 sm:p-10 lg:border-t-0 lg:p-14">
@@ -154,7 +148,7 @@ function About() {
             <motion.button
               variants={itemVariants}
               type="submit"
-              className="group mt-1 flex w-full items-center justify-center gap-3 rounded-xl bg-[#177ed7] px-5 py-4 font-semibold text-white shadow-lg shadow-[#1771BF]/20 hover:bg-[#1b64a4]  sm:w-fit duration-300"
+              className="group mt-1 flex w-full items-center justify-center gap-3 rounded-xl bg-[#177ed7] px-5 py-4 font-semibold text-white shadow-lg shadow-[#1771BF]/20 hover:bg-[#1b64a4]  sm:w-fit"
             >
               Send message
               <FontAwesomeIcon icon={faPaperPlane} className="h-4 w-4 transition-transform duration-200 group-hover:translate-y-[-0.2rem]" />
