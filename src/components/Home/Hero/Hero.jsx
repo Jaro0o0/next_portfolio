@@ -1,6 +1,6 @@
 "use client";
 
-import ScrollLink from "../ScrollLink/ScrollLink";
+import ScrollLink from "../../ScrollLink/ScrollLink";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faDownload } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";

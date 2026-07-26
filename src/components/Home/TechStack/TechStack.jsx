@@ -43,7 +43,7 @@ function TechStack() {
             <motion.div 
               key={item.name} 
               variants={techStackAnimations.item}
-              whileHover={{ y: -5, scale: 1.01 }}
+
               className={`relative p-5 flex flex-col gap-4 bg-[#121212]/50 backdrop-blur-sm rounded-2xl border border-white/5 ${item.borderColor} ${item.shadowColor} transition-[background-color,border-color,box-shadow] duration-500 group cursor-default shadow-lg hover:bg-[#181818]/80`}
             >
               {/* Background Glow Effect */}
