@@ -10,7 +10,7 @@ const projects = [
   {
     title: "Medical Clinic",
     image: "/portfolio-imgs/MedicalLaptop.png",
-    tags: ["React.js", "Framer Motion", "Material UI", "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
+    tags: ["React.js", "Framer Motion", "Material UI", 'CSS', "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
     link: "/portfolio-pages/medical-website",
   },
   {
@@ -93,6 +93,7 @@ function Portfolio() {
                   src={project.image}
                   alt={project.title}
                   fill
+                  quality={100}
                   className="object-cover will-change-transform origin-center group-hover:scale-105 transition-transform duration-500 ease-out"
                 />
               </div>

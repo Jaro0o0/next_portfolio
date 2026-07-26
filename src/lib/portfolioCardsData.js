@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Medical Clinic",
     image: "/portfolio-imgs/MedicalLaptop.png",
-    tags: ["React.js", "Framer Motion", "Material UI", "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
+    tags: ["React.js", "Framer Motion", "Material UI",  'CSS',  "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
     link:  "/portfolio-pages/medical-website",
     cat: 'comercial',
   },
@@ -23,7 +23,7 @@ export const projects = [
   {
     title: "Real Time Chat",
     image: "/portfolio-imgs/chat-laptop.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite',"React Router",],
+    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite',"React Router","PostgreSQL"],
     link: "/portfolio-pages/real-time-chat",
   },
 {
@@ -57,7 +57,7 @@ export const projects = [
   {
     title: "Book Tracker",
     image: "/portfolio-imgs/books-laptop.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Framer Motion','Node.js','Express','Vite',],
+    tags: ["React.js",  'React Router', 'Tailwind CSS', 'TypeScript', 'Framer Motion','Vite','PostgreSQL','Docker','C#','ASP.NET'],
     link: '/clock/book-tracker',
     cat: 'soon',
   },

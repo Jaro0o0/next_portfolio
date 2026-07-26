@@ -22,5 +22,5 @@ export const techItems = [
   { name: "Cursor AI", description: "AI Tool", src: "/icons/cursor.png", bgColor: "bg-white/10", borderColor: "hover:border-white/50", shadowColor: "group-hover:shadow-purple-500/10" },
   { name: "Copilot AI", description: "AI Tool", src: "/icons/copilot.svg", className: "invert brightness-200", bgColor: "bg-white/10", borderColor: "hover:border-white/50", shadowColor: "group-hover:shadow-white/10" },
   { name: "C#", description: "Language", src: "/icons/c-sharp.png", className: "brightness-110 contrast-125 scale-110", bgColor: "bg-purple-400/10", borderColor: "hover:border-purple-400/50", shadowColor: "group-hover:shadow-white/10" },
-  { name: "Net", description: "Language", src: "/icons/dotnet.svg", className: "brightness-110 contrast-125 scale-125", bgColor: "bg-violet-500/10", borderColor: "hover:border-violet-400/50", shadowColor: "group-hover:shadow-violet-400/10" },
+  { name: "Net", description: "Runtime", src: "/icons/dotnet.svg", className: "brightness-110 contrast-125 scale-125", bgColor: "bg-violet-500/10", borderColor: "hover:border-violet-400/50", shadowColor: "group-hover:shadow-violet-400/10" },
 ];
