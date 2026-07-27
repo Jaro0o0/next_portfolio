@@ -56,25 +56,27 @@ const Hero = () => {
             </motion.span>
             
             {/* BUTTONS_BOX */}
-            <motion.div variants={itemVariants} className=" flex flex-col md:flex-row gap-4 justify-center mt-4">
+            <motion.div variants={itemVariants} className="mt-4">
+              <div className="flex flex-col md:flex-row gap-4 justify-center transform-gpu">
               {/* WORK BUTTON */}
               <ScrollLink 
                 href="/#work" 
-                className="bg-gray-300 text-black py-3 px-8 rounded-full flex items-center gap-2 hover:bg-gray-100 transition-colors font-semibold shadow-lg shadow-white/5"
+                className="inline-flex items-center gap-2 bg-gray-300 text-black py-3 px-8 rounded-full hover:bg-gray-100 transition-colors font-semibold leading-none shadow-lg shadow-white/5 transform-gpu"
               >
                 See Work
-                <FontAwesomeIcon icon={faEye} className="h-5 w-5" />
+                <FontAwesomeIcon icon={faEye} className="h-5 w-5 shrink-0" />
               </ScrollLink>
               
               {/* CV BUTTON */}
               <a
                 href="/Maciej_Lach_SoftwareEngineer_2026.pdf" 
-                className="flex items-center gap-2 py-3 px-8 rounded-full border border-[#1771BF] text-[#1771BF] hover:bg-[#1771BF]/10 transition-colors font-semibold"
+                className="inline-flex items-center gap-2 py-3 px-8 rounded-full border border-[#1771BF] text-[#1771BF] hover:bg-[#1771BF]/10 transition-colors font-semibold leading-none transform-gpu"
                 download
               >
                 Download CV
-                <FontAwesomeIcon icon={faDownload} className="h-5 w-5" />
+                <FontAwesomeIcon icon={faDownload} className="h-5 w-5 shrink-0" />
               </a>
+              </div>
             </motion.div>
       </motion.div>
     </section>
