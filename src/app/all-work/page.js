@@ -76,7 +76,7 @@ function Page() {
 
                         {/* CONTENT_BOX */}
                         <div className="flex flex-1 flex-col p-5">
-                            <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
+                            <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
 
                             <div className="mt-auto flex items-end justify-between gap-3 pt-3">
                                 {/* TAGS */}

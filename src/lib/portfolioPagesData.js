@@ -62,7 +62,7 @@ export const items = [
         title: 'Anniversary',
         subtitle: 'Gallery web application ',
         img: "/portfolio-imgs/aniversary.png",
-        tech: ["Next.js", 'React Redux ', 'Tailwind CSS', 'TypeScript', 'Next Auth', 'Prisma','PostgreSQL'],
+        tech: ["React.js",  'Tailwind CSS', 'TypeScript', 'Framer Motion', 'Vite',],
         code: "https://github.com/Jaro0o0/aniversary",
         demo: "https://www.jaropatrycja.online/",
         desc: 'Created as a special anniversary gift for my girlfriend, this web application is an interactive photo gallery showcasing our favorite memories together from 2024 to 2026.',
