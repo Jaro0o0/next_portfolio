@@ -43,7 +43,7 @@ const Hero = () => {
         animate="visible"
         className="text-center flex flex-col gap-5 z-10 p-19"
       >
-            <motion.span variants={itemVariants} className="text-[#1771BF] font-medium tracking-widest">
+            <motion.span variants={itemVariants} className="text-[#1771BF] font-medium tracking-widest block">
               BASED IN POLAND
             </motion.span>
             
@@ -51,7 +51,7 @@ const Hero = () => {
               Software Engineer
             </motion.h1>
             
-            <motion.span variants={itemVariants} className="text-xl text-gray-400">
+            <motion.span variants={itemVariants} className="text-xl text-gray-400 block">
             Front-end focused software engineer.
             </motion.span>
             
