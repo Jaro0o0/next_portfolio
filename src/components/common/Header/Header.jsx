@@ -4,7 +4,9 @@ import Link from "next/link";
 import ScrollLink from "../../ScrollLink/ScrollLink";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -58,21 +60,26 @@ const Header = () => {
         {/* SOCIALS & ACTIONS */}
         <div className="flex items-center gap-5">
           <div className="flex items-center gap-4 border-r border-white/10 pr-5">
+             {/* Linkedin */}
             <a 
               href="https://www.linkedin.com/in/maciej-lach-46555b404/"  
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
+        
             >
-              <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
+              <LinkedInIcon  fontSize="small"/>
+              
             </a>
+            {/* Git_Hub */}
             <a 
               href="https://github.com/Jaro0o0" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-gray-400 hover:text-white transition-colors"
+              
             >
-              <FontAwesomeIcon icon={faGithub} className="w-5 h-5" />
+              <GitHubIcon fontSize="small"/>
             </a>
           </div>
           
