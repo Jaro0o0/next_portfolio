@@ -4,9 +4,10 @@ import Link from "next/link";
 import ScrollLink from "../../ScrollLink/ScrollLink";
 import { usePathname } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import MenuIcon from '@mui/icons-material/Menu';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
