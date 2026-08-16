@@ -10,7 +10,7 @@ import { techItems } from "@/lib/techStackData";
 
 function TechStack() {
   return (
-    <section id="technologies" className="py-24 px-4 sm:px-0 relative overflow-hidden">
+    <section id="technologies" className="py-24 px-4 relative overflow-hidden">
      
       
 

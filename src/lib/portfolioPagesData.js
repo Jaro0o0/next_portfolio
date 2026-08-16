@@ -78,5 +78,18 @@ export const items = [
         demo: "/",
         desc: 'This project is a personal website, where you actually are now,  was built with Next.js elements of Material UI, Framer Motion and JavaScript ',
     },
+      {
+        //Portfolio
+        slug: 'finanse-tracker',
+        title: 'Fianse Menager',
+        subtitle: 'money tracker built in Python ',
+        img: "/portfolio-imgs/finanse-tracker.jpg",
+        tech: ["Python", 'Pandas', 'Rich','sqlite3', 'NeuralProphet',],
+        code: "https://github.com/Jaro0o0/finanse_tracker",
+        demo: "https://github.com/Jaro0o0/finanse_tracker",
+        desc: 'This project is a money tracker built in Python which enables to track personal expenses and forecast feature expenses by a local AI model.',
+    },
  
+
+   
 ]

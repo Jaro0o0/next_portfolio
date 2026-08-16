@@ -13,5 +13,9 @@ export const timers =  [
         slug:'book-tracker',
         time:"2026-08-30T00:00:00"
     },
+      {
+        slug:'travel-planner',
+        time:"2026-08-26T00:00:00"
+    },
    
 ]

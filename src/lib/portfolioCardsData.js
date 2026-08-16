@@ -61,6 +61,21 @@ export const projects = [
     link: '/clock/book-tracker',
     cat: 'soon',
   },
+  {
+    title: "Finanse Tracker",
+    image: "/portfolio-imgs/finanse-tracker.jpg",
+    tags: ["Python", 'Pandas', 'Rich','sqlite3', 'NeuralProphet',],
+    link: '/portfolio-pages/finanse-tracker',
+    cat: 'finished',
+  },
+  {
+    title: "Travel Planner ",
+    image: "/portfolio-imgs/travel-planner.jpg",
+    tags: ["C#","Spectre.Console","sqlite3",],
+    link: '/clock/travel-planner',
+    cat: 'soon',
+  },
+   
 
 ];
 
