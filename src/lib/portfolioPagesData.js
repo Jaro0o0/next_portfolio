@@ -78,16 +78,38 @@ export const items = [
         demo: "/",
         desc: 'This project is a personal website, where you actually are now,  was built with Next.js elements of Material UI, Framer Motion and JavaScript ',
     },
-      {
-        //Portfolio
+    {
+        //Finanse_Tracker
         slug: 'finanse-tracker',
         title: 'Fianse Menager',
-        subtitle: 'money tracker built in Python ',
+        subtitle: 'money tracker built in Python',
         img: "/portfolio-imgs/finanse-tracker.jpg",
         tech: ["Python", 'Pandas', 'Rich','sqlite3', 'NeuralProphet',],
         code: "https://github.com/Jaro0o0/finanse_tracker",
         demo: "https://github.com/Jaro0o0/finanse_tracker",
         desc: 'This project is a money tracker built in Python which enables to track personal expenses and forecast feature expenses by a local AI model.',
+    },
+    {
+        //Travel_PLanner
+        slug: 'travel-planer',
+        title: 'Travel Planner',
+        subtitle: 'Console application for travel planning',
+        img: "/portfolio-imgs/travel-planner.jpg",
+        tech: ["C#","Spectre.Console","sqlite3",],
+        code: "https://github.com/Jaro0o0/travel_planner",
+        demo: "https://github.com/Jaro0o0/travel_planner",
+        desc: 'A console application for travel planning. It searches for a location, retrieves current weather data, and then suggests attractions and equipment items tailored to the conditions and user preferences.',
+    },
+    {
+        //Book_Trackeer
+        slug: 'book-tracker',
+        title: 'Book Tracker',
+        subtitle: 'Full-stack library management platform',
+        img: "/portfolio-imgs/books.png",
+        tech: ["React.js",  'React Router', 'Tailwind CSS', 'TypeScript', 'Framer Motion','Vite','PostgreSQL','Docker','C#','ASP.NET','Entity Framework','Material UI','Jest','xUnit',],
+        code: "https://github.com/Jaro0o0/library_system",
+        demo: "https://github.com/Jaro0o0/library_system",
+        desc: 'This project is a web application for a library, consisting of a backend (.NET) and a frontend (React + Vite + TypeScript). The application allows users to create accounts, log in, browse and highlight books, check availability, view rental history and active rentals. The system also generates book recommendations based on rental history.',
     },
  
 

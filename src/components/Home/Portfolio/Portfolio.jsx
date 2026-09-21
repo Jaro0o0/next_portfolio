@@ -13,11 +13,17 @@ const projects = [
     tags: ["React.js", "Framer Motion", "Material UI", 'CSS', "React Router",'React Hook Form','Email.js',"JavaScript","Vite"],
     link: "/portfolio-pages/medical-website",
   },
+  // {
+  //   title: "Skyline Weather",
+  //   image: "/portfolio-imgs/skyline-weather-laptop.png",
+  //   tags: ["Next.js", "Tailwind CSS", "TypeScript",],
+  //   link: "/portfolio-pages/skyline-weather",
+  // },
   {
-    title: "Skyline Weather",
-    image: "/portfolio-imgs/skyline-weather-laptop.png",
-    tags: ["Next.js", "Tailwind CSS", "TypeScript",],
-    link: "/portfolio-pages/skyline-weather",
+    title: "Book Tracker",
+    image: "/portfolio-imgs/books-laptop.png",
+    tags: ["React.js",  'React Router', 'Tailwind CSS', 'TypeScript', 'Framer Motion','Vite','PostgreSQL','Docker','C#','ASP.NET','Entity Framework','Material UI','Jest','xUnit',],
+    link: "/portfolio-pages/book-tracker",
   },
   {
     title: "Crypto Forge",
@@ -25,11 +31,17 @@ const projects = [
     tags: ["Next.js", "Framer Motion", "Tailwind CSS","Material UI","JavaScript","Three.js" ],
     link: "/portfolio-pages/crypto-forge",
   },
+  // {
+  //   title: "Real Time Chat",
+  //   image: "/portfolio-imgs/chat-laptop.png",
+  //   tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite',"React Router","PostgreSQL"],
+  //   link: "/portfolio-pages/real-time-chat",
+  // },
   {
-    title: "Real Time Chat",
-    image: "/portfolio-imgs/chat-laptop.png",
-    tags: ["React.js",  'Tailwind CSS', 'TypeScript', 'Node.js','Express','Socket.io','Docker','Vite',"React Router","PostgreSQL"],
-    link: "/portfolio-pages/real-time-chat",
+    title: "Travel Planner",
+    image: "/portfolio-imgs/travel-laptop.png",
+    tags: ["C#","Spectre.Console","sqlite3",],
+    link: "/portfolio-pages/travel-planer",
   },
 
 ];

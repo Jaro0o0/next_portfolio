@@ -78,11 +78,11 @@ function About() {
   };
 
   return (
-    <section id='contact' className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32  [mask-image:radial-gradient(ellipse_80%_60%_at_50%_50%,#000_70%,transparent_100%)]">
+    <section id='contact' className="relative overflow-hidden px-4 py-24 sm:px-6 lg:py-32  [mask-image:radial-gradient(ellipse_60%_70%_at_50%_50%,black_70%,transparent_100%)]">
       <Toaster position="top-right" />
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -left-36 top-10 h-100 w-100 rounded-full bg-[#1771BF]/15 blur-[120px]" />
-        <div className="absolute -left-12 top-0 hidden w-[38rem] opacity-[0.07] lg:block">
+        <div className="absolute -left-36 top-10 h-100 w-100 rounded-full bg-[#1771BF]/50 blur-[120px]" />
+        <div className="absolute -left-12 top-0 hidden w-[38rem] opacity-[0.3] lg:block">
           <Code language="jsx" showCopyButton={false}>{codeData}</Code>
         </div>
       </div>
@@ -92,7 +92,7 @@ function About() {
         whileInView="show"
         viewport={{ once: true, amount: 0.18 }}
         variants={containerVariants}
-        className="relative mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-[#0d0d0f]/85 shadow-2xl shadow-black/30 backdrop-blur-sm lg:grid-cols-[1.05fr_0.95fr]"
+        className="relative mx-auto grid max-w-7xl overflow-hidden rounded-[2rem] border border-white/10 bg-[#0d0d0f] shadow-2xl shadow-black/30 backdrop-blur-sm lg:grid-cols-[1.05fr_0.95fr]"
       >
         <div className="relative p-7 sm:p-10 lg:p-14">
           <div aria-hidden="true" className="absolute inset-y-0 right-0 hidden w-px bg-gradient-to-b from-transparent via-white/15 to-transparent lg:block" />
@@ -110,7 +110,7 @@ function About() {
           </motion.div>
 
           <motion.p variants={itemVariants} className="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">
-            I&apos;m a Front-End focused Software Engineer specializing in React, TypeScript & Next.js — with hands-on experience in Node.js (Express) and Docker for full-stack projects. 
+            I&apos;m a Software Engineer specializing in .NET and React. I build applications that are not only functional, but also thoughtfully designed in terms of architecture, performance, and user experience.
           </motion.p>
           
 

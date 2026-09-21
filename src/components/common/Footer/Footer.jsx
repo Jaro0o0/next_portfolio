@@ -36,7 +36,7 @@ function Footer() {
                     <div className="md:col-span-2">
                         <h3 className="text-2xl font-bold text-white mb-4 tracking-tighter">Maciej Lach</h3>
                         <p className="text-zinc-500 max-w-xs leading-relaxed">
-                           Front-end focused software engineer who turns ideas into fast, polished, and user friendly web applications.
+                           Software engineer who turns ideas into fast, polished, and user friendly applications.
                         </p>
                     </div>
 

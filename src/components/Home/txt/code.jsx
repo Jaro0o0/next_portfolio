@@ -16,7 +16,7 @@ const theme = {
       style: { color: "#c4b5fd" },
     },
     { types: ["punctuation", "operator"], style: { color: "#a1a1aa" } },
-    { types: ["string", "char", "attr-value"], style: { color: "#86efac" } },
+    { types: ["string", "char", "attr-value"], style: { color: "#73b7ed" } },
     { types: ["number", "boolean", "constant"], style: { color: "#f9a8d4" } },
     {
       types: ["class-name", "function", "tag", "key-white"],
@@ -56,7 +56,7 @@ export const Code = ({
               onClick={copyCode}
               disabled={!code}
               aria-label={isCopied ? "Kod został skopiowany" : "Kopiuj kod"}
-              className="absolute right-3 top-3 z-10 inline-flex items-center gap-1.5 rounded-md border border-white/10 bg-zinc-950/80 px-2 py-1 text-xs font-medium text-zinc-400 opacity-0 transition hover:bg-white/10 hover:text-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100"
+              className="absolute right-3 top-3 z-10 inline-flex items-center gap-1. px-2 py-1 text-xs font-medium text-zinc-400 opacity-0 transition hover:bg-white/10 hover:text-white focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400 disabled:cursor-not-allowed disabled:opacity-40 group-hover:opacity-100"
             >
               {isCopied ? (
                 <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden="true">
@@ -72,7 +72,7 @@ export const Code = ({
             </button>
           )}
 
-          <pre className="h-full overflow-auto whitespace-pre-wrap break-words rounded-md border border-white/10 bg-zinc-950/40 px-4 py-3 text-sm leading-6 backdrop-blur-md">
+          <pre className="h-full overflow-auto whitespace-pre-wrap break-words px-4 py-3 text-sm leading-6 backdrop-blur-md">
             {tokens.map((line, index) => {
               const { key: lineKey, ...lineProps } = getLineProps({ line, key: index });
 

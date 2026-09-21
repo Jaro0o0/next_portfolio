@@ -51,10 +51,6 @@ const Hero = () => {
               Software Engineer
             </motion.h1>
             
-            <motion.span variants={itemVariants} className="text-xl text-gray-400 block">
-            Front-end focused software engineer.
-            </motion.span>
-            
             {/* BUTTONS_BOX */}
             <motion.div variants={itemVariants} className="mt-4">
               <div className="flex flex-col md:flex-row gap-4 justify-center transform-gpu">

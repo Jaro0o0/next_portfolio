@@ -57,9 +57,9 @@ export const projects = [
   {
     title: "Book Tracker",
     image: "/portfolio-imgs/books-laptop.png",
-    tags: ["React.js",  'React Router', 'Tailwind CSS', 'TypeScript', 'Framer Motion','Vite','PostgreSQL','Docker','C#','ASP.NET'],
-    link: '/clock/book-tracker',
-    cat: 'soon',
+    tags: ["React.js",  'React Router', 'Tailwind CSS', 'TypeScript', 'Framer Motion','Vite','PostgreSQL','Docker','C#','ASP.NET','Entity Framework','Material UI','Jest','xUnit',],
+    link: '/portfolio-pages/book-tracker',
+    cat: 'finished',
   },
   {
     title: "Finanse Tracker",
@@ -69,11 +69,11 @@ export const projects = [
     cat: 'finished',
   },
   {
-    title: "Travel Planner ",
+    title: "Travel Planner",
     image: "/portfolio-imgs/travel-planner.jpg",
     tags: ["C#","Spectre.Console","sqlite3",],
-    link: '/clock/travel-planner',
-    cat: 'soon',
+    link: '/portfolio-pages/travel-planer',
+    cat: 'finished',
   },
    
 
