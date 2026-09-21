@@ -71,7 +71,7 @@ export const projects = [
   {
     title: "Travel Planner",
     image: "/portfolio-imgs/travel-planner.jpg",
-    tags: ["C#","Spectre.Console","sqlite3",],
+    tags: ["C#","Spectre.Console","sqlite3",'xUnit',],
     link: '/portfolio-pages/travel-planer',
     cat: 'finished',
   },

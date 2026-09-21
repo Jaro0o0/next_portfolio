@@ -95,7 +95,7 @@ export const items = [
         title: 'Travel Planner',
         subtitle: 'Console application for travel planning',
         img: "/portfolio-imgs/travel-planner.jpg",
-        tech: ["C#","Spectre.Console","sqlite3",],
+        tech: ["C#","Spectre.Console","sqlite3",'xUnit',],
         code: "https://github.com/Jaro0o0/travel_planner",
         demo: "https://github.com/Jaro0o0/travel_planner",
         desc: 'A console application for travel planning. It searches for a location, retrieves current weather data, and then suggests attractions and equipment items tailored to the conditions and user preferences.',
