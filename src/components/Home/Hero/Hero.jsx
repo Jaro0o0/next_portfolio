@@ -65,7 +65,7 @@ const Hero = () => {
               
               {/* CV BUTTON */}
               <a
-                href="/Maciej_Lach_SoftwareEngineer_2026.pdf" 
+                href="/Maciej_Lach_Software_Engineer_CV.pdf" 
                 className="inline-flex items-center gap-2 py-3 px-8 rounded-full border border-[#1771BF] text-[#1771BF] hover:bg-[#1771BF]/10 transition-colors font-semibold leading-none transform-gpu"
                 download
               >
